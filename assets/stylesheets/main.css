@@ -22,6 +22,10 @@ main {
   padding: 15px;
 }
 
+main h2 {
+  border-bottom: 1px solid #999;
+}
+
 footer {
   padding: 15px;
   color: #000;
