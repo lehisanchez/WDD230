@@ -15,6 +15,7 @@ header {
 
 header img {
   float: right;
+  width: 20%;
   border: 5px solid #fff;
 }
 
@@ -27,6 +28,7 @@ main h2 {
 }
 
 footer {
+  clear: right;
   padding: 15px;
   color: #000;
   background-color: #DDD;
