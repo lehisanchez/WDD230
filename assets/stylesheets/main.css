@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 body {
   background-color: #ddd;
   font-family: Arial, "MS Trebuchet", sans-serif;
@@ -5,6 +7,7 @@ body {
 
 h1 {
   margin: 0px;
+  font-family: 'Lora', serif;
 }
 
 header {
