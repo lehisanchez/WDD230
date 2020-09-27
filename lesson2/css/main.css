@@ -24,11 +24,23 @@ header p {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+    padding: 15px;
+}
+
+article h2 {
+    text-align: center;
+}
+
+article img {
+    width: 100%;
 }
 
 /* Medium */
-@media only screen and (min-width: 37.5em) {
+/* @media only screen and (min-width: 37.5em) {
 
 	main {
         margin: 0px auto;
@@ -40,7 +52,7 @@ main {
         border: 1px solid #999;
 	}
 
-}
+} */
 
 footer {
     text-align: center;
