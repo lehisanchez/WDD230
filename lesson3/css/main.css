@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: #083D77;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color:#EBEBD3;
+    border: 2px solid #083D77;
+    border-radius: 100%;
+}
+
+#logo img {
+    height: 100%;
+    /* width: 80%; */
+    /* height: 80%; */
+}
+
+#navigation ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#navigation ul li {
+    
+}
+
+#navigation a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+#current-temperature {
+    width: 100%;
+    font-size: 100%;
+    color: #EBEBD3; 
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #083D77;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    /* background-color:#083D77; */
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #EBEBD3;
+    text-decoration: none;
+}
+
+
+#current-weather {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #ffffff;
+    /* background-color:#083D77; */
+}
+
+#current-weather h1 {
+    font-size: 20em;
+    white-space: nowrap;
+}
+
+#main-navigation {
+
+}
+
+#main-navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    border: 1px solid red;
+}
+
+#main-navigation ul li {
+    margin-right: 20px;
+    border: 1px solid green;
+}
