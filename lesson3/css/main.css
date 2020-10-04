@@ -1,134 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400;900&display=swap');
 
 body {
-    font-family: 'Roboto';
-    background-color: #083D77;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
+
+
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 30px 10px 0px 20px;
 }
 
-#logo {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+header #logo {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    background-color:#EBEBD3;
-    border: 2px solid #083D77;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #ebebd3;
+    border: 5px solid #083d77;
     border-radius: 100%;
 }
 
-#logo img {
-    height: 100%;
-    /* width: 80%; */
-    /* height: 80%; */
+header #logo img {
+    height: 90%;
 }
 
-#navigation ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+header h1 {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
-#navigation ul li {
-    
+header #url {
+    margin-bottom: 30px;
 }
 
-#navigation a {
-    margin-right: 20px;
-    color: #fff;
-    text-decoration: none;
-}
 
-#navigation a:hover {
-    text-decoration: underline;
-}
-
-#current-temperature {
-    width: 100%;
-    font-size: 100%;
-    color: #EBEBD3; 
-}
-
-header {
-    display:flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #083D77;
+#logo-demo {
+    height: 200px;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0px;
-    /* background-color:#083D77; */
+    background-color: #ebebd3;
 }
 
+
 nav ul {
-    display:flex;
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
 }
 
 nav ul li {
-    margin-right: 20px;
+    display: flex;
+    text-align: center;
+    width: 100%;
 }
 
 nav ul li a {
-    color: #EBEBD3;
+    width: 100%;
+    padding: 20px;
+    color: #083d77;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #ebebd3;
+    background-color: #083d77;
+}
 
-#current-weather {
-    display:flex;
+main {
+    color: #ffffff;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+main section h2 {
+    font-size: 5em;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+main section p, main section li, main section img {
+    font-weight: lighter;
+    max-width: 700px;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    letter-spacing: .05em;
+}
+
+main section img {
+    border: 1px solid white;
+}
+
+main section:nth-of-type(1)  {
+    color: #000;
+    background-color: #f4d35e;
+}
+
+main section:nth-of-type(2) {
+    background-color: #f78764;
+}
+
+main section:nth-of-type(3) {
+    background-color: #da4167;
+}
+
+main section:nth-of-type(4) {
+    background-color: #083d77;
+}
+
+main section#typography {
+    background-color: #ebebd3;
+}
+
+footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    color: #ffffff;
-    /* background-color:#083D77; */
+    min-height: 100px;
+    line-height: 1.7em;
 }
 
-#current-weather h1 {
-    font-size: 20em;
-    white-space: nowrap;
+
+#typography-sample-site-header {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
 }
-
-#main-navigation {
-
+#typography-sample-primary-link {
+    font-family: 'Open-Sans', sans-serif;
+    color: #083d77;
+    letter-spacing: 0px;
 }
-
-#main-navigation ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    border: 1px solid red;
+#typography-sample-footer-link {
+    font-family: 'Open-Sans', sans-serif;
+    color: #083d77;
+    letter-spacing: 0px;
 }
-
-#main-navigation ul li {
-    margin-right: 20px;
-    border: 1px solid green;
+#typography-sample-h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5em;
+    font-weight: lighter;
+}
+#typography-sample-h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
+}
+#typography-sample-h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+#typography-sample-p {
+    font-family: 'Open-Sans', sans-serif;
 }
