@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400;900&display=swap');
+
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -12,9 +14,6 @@ html {
 	box-sizing: border-box;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400;900&display=swap');
-
 h1,
 h2,
 h3,
@@ -23,7 +22,6 @@ h5,
 h6 {
 	margin: 0;
 	padding: 0;
-
 }
 
 header {
