@@ -1,16 +1,45 @@
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
+@media (min-width: 768px) {
+
+	header {
 		display: flex;
+		flex-direction: row;
 	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
+
+	header #logo {
+		margin-right: 15px;
 	}
-	.navigation a {
+
+	header #branding {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		max-width: 1024px;
+		margin: 0;
+		padding: 0;
 		text-align: center;
 	}
-	.navigation li:first-child {
+
+	nav ul li:first-child {
 		display: none;
 	}
+
+	nav ul li {
+		display: block;
+	}
+
+	main #hero {
+		font-size: 7em;
+	}
+
+	main #forecast {
+		display: grid;
+		grid-auto-flow:column;
+		column-gap: 10px;
+	}
+
 }
