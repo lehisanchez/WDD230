@@ -170,12 +170,62 @@ main {
 }
 
 #hero {
-	height: 250px;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 30px 1fr 1fr 1fr;
 	margin-bottom: 20px;
+	border: 1px solid black;
+}
+
+#hero h2 {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+#hero-background {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	height: 300px;
 	background-position: center;
 	background-size: cover;
 	background-image: url("../images/sunflowers.jpg");
-	border-radius: 15px;
+	/* border-radius: 15px; */
+	z-index: -1000;
+}
+
+#hero table {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	align-self: start;
+	padding: 10px;
+	color: white;
+	background-color:var(--color-blue);
+	z-index: 1000;
+}
+
+#hero table th {
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+
+#hero table tr:nth-child(1) td {
+	padding-top: 10px;
+}
+
+#hero table td:nth-child(1) {
+	width: 50%;
+	padding-right: 5px;
+	text-align: right;
+}
+
+#hero table td:nth-child(2) {
+	color: var(--color-yellow);
+}
+
+
+
+#forecast {
+  display: none;
 }
 
 footer {
