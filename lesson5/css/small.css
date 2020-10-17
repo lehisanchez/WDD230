@@ -48,6 +48,18 @@ body {
 	flex-direction: column;
 }
 
+#notification {
+	display: none;
+	padding: 1em;
+	text-align: center;
+	color: black;
+	background-color: var(--color-notification-background);
+}
+
+#notification.show {
+	display: block;
+}
+
 header {
 	display: flex;
 	flex-direction: row;
@@ -104,14 +116,6 @@ header {
 
 #hamburger.responsive {
 	transform: rotate(90deg);
-}
-
-#notification {
-	padding: 1em;
-	text-align: center;
-	/* display: none; */
-	color: black;
-	background-color: var(--color-notification-background);
 }
 
 /*  

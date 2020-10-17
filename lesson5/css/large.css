@@ -1,5 +1,21 @@
 @media (min-width: 1080px) {
 
+    header {
+        height: 120px;
+    }
+
+    #letterhead h1 {
+        font-size: 3em;
+    }
+    
+    #letterhead span {
+        font-size: 1.2em;
+    }
+
+    nav a  {
+        font-size: 1em;
+    }
+
     #current-temperature {
         grid-column-start: 1;
         grid-column-end: 2;

@@ -1,5 +1,44 @@
 @media (min-width: 600px) {
 
+    header {
+        display: block;
+        height: 80px;
+    }
+
+    #branding {
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #letterhead h1 {
+        font-size: 1.7em;
+    }
+    
+    #letterhead span {
+        font-size: 1em;
+    }
+
+    nav ul {
+		display: flex;
+		flex-direction: row;
+		max-width: 1024px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	nav ul li {
+		display: block;
+    }
+    
+    nav a  {
+        font-size: .9em;
+    }
+
     main h2 {
         text-align: left;
     }
