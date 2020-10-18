@@ -74,18 +74,16 @@
     }
 
     #contact {
-        display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
         justify-content: space-between;
         margin: 0 auto;
         width: 100%;
-        margin-bottom: 30px;
-        padding: 15px;
+        padding: 30px;
     }
 
     #contact div {
-        width: 50%;
+        width: 40%;
     }
 
     #contact h2 {
@@ -93,7 +91,7 @@
     }
 
     #contact img {
-        width: 50%;
+        width: 40%;
     }
     
 }
