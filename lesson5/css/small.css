@@ -182,7 +182,7 @@ MAIN
 main {
 	margin: 0 auto;
 	max-width: 1080px;
-	padding: 0 15px 0 15px;
+	/* padding: 0 15px 0 15px; */
 }
 
 main h2 {
@@ -327,18 +327,6 @@ Contact
 
 
 
-footer {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	padding: 20px 0 30px 0;
-	font-size: .8em;
-	color: #fff;
-	text-align: center;
-	background-color: var(--color-navigation-background);
-}
-
 #contact {
 	display: flex;
 	flex-direction: column;
@@ -346,7 +334,7 @@ footer {
 	justify-content: center;
 	padding: 15px;
 	color: #fff;
-	background-color: var(--color-navigation-hover);
+	background-color: var(--color-navigation-background);
 }
 
 #contact div {
@@ -370,4 +358,22 @@ footer {
 
 .updated {
 	margin-left: 10px;
+}
+
+
+footer {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1080px;
+	padding: 30px 15px 30px 15px;
+	/* display: flex; */
+	/* flex-direction: column;
+	align-content: center;
+	justify-content: center; */
+	max-width: 1080px;
+	/* padding: 20px 0 30px 0; */
+	font-size: .8em;
+	color: #fff;
+	text-align: center;
+	background-color: var(--color-navigation-hover);
 }
