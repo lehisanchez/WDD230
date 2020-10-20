@@ -1,0 +1,40 @@
+@media (min-width: 1080px) {
+
+    header {
+        height: 120px;
+    }
+
+    #letterhead h1 {
+        font-size: 3em;
+    }
+    
+    #letterhead span {
+        font-size: 1.2em;
+    }
+
+    nav a  {
+        font-size: 1em;
+    }
+
+    #current-temperature {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin: 10px 0 0 10px;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+        transition-property: grid-column;
+        transition-duration: 4s;
+        transition-delay: 2s;
+    }
+
+    #article img {
+        max-width: 20%;
+    }
+
+    #contact {
+        max-width: 1080px;
+    }
+
+
+}
