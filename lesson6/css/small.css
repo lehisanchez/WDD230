@@ -207,7 +207,7 @@ HERO
 	text-align: center;
 }
 
-#hero img {
+#hero img, #hero picture {
 	grid-column-start: 1;
 	grid-column-end: 5;
 	grid-row-start: 2;
