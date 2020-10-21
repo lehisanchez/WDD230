@@ -47,6 +47,13 @@
 
             <img src="images/sunflowers.jpg" alt="sunflowers">
 
+            <img srcset="images/Hero_Image_200.jpg 200w,
+                         images/Hero_Imageelva-fairy-800w.jpg 800w"
+     sizes="(max-width: 600px) 480px,
+            800px"
+     src="elva-fairy-800w.jpg"
+     alt="Elva dressed as a fairy">
+
             <div id="current-temperature">
                 <table>
                     <thead>
@@ -61,11 +68,11 @@
                         </tr>
                         <tr>
                             <td>High:</td>
-                            <td>70</td>
+                            <td><span id="currentTemperature">70</span>&deg; F</td>
                         </tr>
                         <tr>
                             <td>Wind Chill:</td>
-                            <td>60</td>
+                            <td><span id="currentWindChill"></span></td>
                         </tr>
                         <tr>
                             <td>Humidity:</td>
@@ -73,7 +80,7 @@
                         </tr>
                         <tr>
                             <td>Wind Speed:</td>
-                            <td>10 mph</td>
+                            <td><span id="currentWindSpeed">10</span> mph</td>
                         </tr>
                     </tbody>
                 </table>
@@ -118,6 +125,7 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
