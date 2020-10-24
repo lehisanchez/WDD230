@@ -1,8 +1,8 @@
 function calculateWindChill() {
 
     let temperature = parseFloat(document.getElementById('currentTemperature').innerHTML)
-    let speed = parseFloat(document.getElementById('currentWindSpeed').innerHTML)
-    let factor = windChill(temperature,speed)
+    let speed       = parseFloat(document.getElementById('currentWindSpeed').innerHTML)
+    let factor      = windChill(temperature,speed)
 
     if (temperature <= 50 && speed > 3) {
         document.getElementById("currentWindChill").innerHTML = factor + "&deg; F"
