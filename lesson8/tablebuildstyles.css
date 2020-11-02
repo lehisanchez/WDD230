@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --gray: #b5b8b9;
+    --green-500: #e7f0ed;
+    --green-600: #e7ffed;
+    --blue-400: #628ca6;
+    --blue-600: #7fb9c2;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    border-spacing: 1px;
+    background-color: var(--gray);
+    box-shadow: 10px 10px 8px #888888;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+td.highlight {
+    color: white;
+    background-color: var(--blue-400);
+}
+
+table thead {
+    color: black;
+    background-color: var(--blue-600);
+}
+
+table th {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+table thead th {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+table tbody tr:first-child th {
+    font-weight: bold;
+}
+
+table tbody tr:first-child {
+    color: white;
+    background-color: var(--blue-400);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--green-500);
+}
+
+table tbody tr:nth-child(2n+3) {
+    background-color: var(--green-600);
+}
+
+/*  TABLE FOOT */
+
+table tfoot {
+    font-size: .8em;
+    background-color: var(--blue-600);
+}
