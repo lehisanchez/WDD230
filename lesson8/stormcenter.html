@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WeatherBee | Preston</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+
+    <header>
+        <div id="branding">
+            <div id="logo">
+                <img src="images/logo.png" alt="WeatherBee Logo">
+            </div>
+            <div id="letterhead">
+                <h1>WeatherBee</h1>
+                <span>Weather for children</span>
+            </div>
+        </div>
+        <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav>
+        <ul id="navigation" class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="thanks.html" method="GET">
+
+            <div class="form-group">
+                <label for="formFullname">
+                    Full Name
+                    <input type="text" name="formFullname" id="formFullname">
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="formEmail">
+                    Email
+                    <input type="text" name="formEmail" id="formEmail">
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="formTelephone">
+                    Phone Number
+                    <input type="text" name="formTelephone" id="formTelephone">
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="formZipCode">
+                    Zip Code
+                    <input type="text" name="formZipCode" id="formZipCode">
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="formStormDate">
+                    Storm Date
+                    <input type="text" name="formStormDate" id="formStormDate">
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="formStormType">
+                    Storm Type
+                    <input type="text" name="formStormType" id="formStormType">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="formStormSeverity">
+                    Storm Severity
+                    <input type="text" name="formStormSeverity" id="formStormSeverity">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="formStormRegion">
+                    Storm Region
+                    <input type="text" name="formStormRegion" id="formStormRegion">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="formUserDanger">
+                    User In-Danger Level
+                    <input type="text" name="formUserDanger" id="formUserDanger">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="formInformation">
+                    Additional Information
+                    <input type="text" name="formInformation" id="formInformation">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <input type="button" value="Submit">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span></div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Open Sans', 'Roboto']
+        }
+      });
+    </script>
+    
+</body>
