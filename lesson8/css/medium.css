@@ -17,26 +17,30 @@
     #letterhead h1 {
         font-size: 1.7em;
     }
-    
+
     #letterhead span {
         font-size: 1em;
     }
 
     nav ul {
-		display: flex;
-		flex-direction: row;
-		max-width: 1024px;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
-
-	nav ul li {
-		display: block;
+        display: flex;
+        flex-direction: row;
+        max-width: 1024px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
     }
-    
-    nav a  {
+
+    nav ul li {
+        display: block;
+    }
+
+    nav a {
         font-size: .9em;
+    }
+
+    main {
+        max-width: 1000px;
     }
 
     main h2 {
@@ -47,7 +51,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
+
 
     #hero h2 {
         text-align: left;
@@ -69,7 +73,7 @@
         margin-bottom: 30px;
         padding-top: 20px;
     }
-    
+
     #forecast div {
         display: flex;
         flex-direction: column;
@@ -79,12 +83,12 @@
         height: 100px;
         margin-bottom: 50px;
     }
-    
+
     #forecast img {
         max-height: 90%;
         max-width: 90%;
     }
-    
+
     #forecast div span {
         display: block;
         margin-bottom: 10px;
@@ -118,5 +122,33 @@
         display: inline;
         width: 40%;
     }
+
+    /*  
+
+    FORM  
+    ========================================= */
+    .form-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        width: 75%;
+        padding: 0 10px 0 10px;
+    }
     
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group span {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .form-group input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 15px;
+        font-size: 1em;
+    }
+
 }

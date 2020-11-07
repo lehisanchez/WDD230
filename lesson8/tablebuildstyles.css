@@ -6,6 +6,7 @@
     --green-600: #e7ffed;
     --blue-400: #628ca6;
     --blue-600: #7fb9c2;
+    --font: 'Ubuntu', sans-serif;
 }
 
 *,
@@ -21,7 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--font);
 }
 
 table {
@@ -46,13 +47,14 @@ table thead {
 }
 
 table th {
-    font-family: 'Ubuntu', sans-serif;
+    
+    font-family: var(--font);
     font-size: 1.2em;
     font-weight: bold;
 }
 
 table thead th {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--font);
     font-size: 1.7em;
     font-weight: bold;
 }

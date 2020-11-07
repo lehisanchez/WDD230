@@ -180,7 +180,7 @@ MAIN
 main {
 	margin: 0 auto;
 	margin-bottom: 50px;
-	max-width: 1080px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:space-evenly;
@@ -388,12 +388,77 @@ footer {
 
 FORM  
 ========================================= */
-.form-group {
+
+.form-wrapper {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	width: 100%;
+	padding: 0 10px 0 10px;
 }
 
-.form-group input {
-	width: 20vh;
-	padding: 3px;
+form fieldset {
+	margin-bottom: 3rem;
+	padding: 1rem;
+}
+
+form legend {
+	font-family: sans-serif;
+	font-weight: bold;
+    font-size: 1.2em;
+}
+
+form input, 
+form textarea {
+	display: block;
+	width: 100%;
+	margin-top: .2rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+form label .top, form div {
+    /* display: block;
+    padding-top: 1rem;
+    color:#ff4500;
+    font-size: 1rem;
+    font-weight: bold; */
+}
+form label.top, form label.top select {
+    /* -webkit-appearance: none; */
+    /* display: block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #555;
+    width: 100%;
+    max-width: 30rem; */
+}
+form label.sbs {
+	display: block;
+    /* display: block;
+    padding: 0.75em 0;
+    color: #555; */
+}
+form label.sbs input {
+    width: auto;
+}
+
+form input.submitBtn {
+    /* background-color:blue;
+    color: white;
+    padding: 1rem 1rem;
+    width: 100%; */
+}
+form input.submitBtn:hover {
+    /* background-color: lightblue; */
+}
+form label.top input:required {
+    /* border-left: #ff4500 solid 6px; */
+}
+form input, form textarea {
+    /* border-radius: 0.3rem;
+    width: 100%; */
+}
+
+form label.top input:required:valid {
+    /* border-left: green solid 6px; */
 }
