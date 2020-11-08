@@ -1,0 +1,62 @@
+// ========== HEADER ==========
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	padding: 0 15px;
+	background-color: var(--color-blue-light);
+	border-top: 1px solid var(--color-navigation-background);
+	border-bottom: 1px solid var(--color-navigation-background);
+}
+
+
+
+// ========== BRANDING ==========
+
+#branding {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+}
+
+
+
+// ========== LOGO ==========
+
+#logo {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+	margin-right: 15px;
+}
+
+#logo img {
+	height: 80%;
+}
+
+
+#letterhead h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+#letterhead span {
+	font-size: .8em;
+	font-style: italic;
+}
+
+#hamburger {
+	align-content: flex-end;
+	font-size: 1.7em;
+	cursor: pointer;
+}
+
+#hamburger.responsive {
+	transform: rotate(90deg);
+}
