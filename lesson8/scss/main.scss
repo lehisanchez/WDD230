@@ -1,6 +1,15 @@
+// ---------- BASE
 @use 'partials/root';
 @use 'partials/reset';
+@use 'partials/typography';
 @use 'partials/layout';
+
+// ---------- COMPONENTS
 @use 'partials/header';
 @use 'partials/navigation';
 @use 'partials/main';
+@use 'partials/form';
+
+// ---------- SCREEN
+@use 'partials/medium';
+@use 'partials/large';

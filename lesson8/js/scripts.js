@@ -74,3 +74,9 @@ if ('IntersectionObserver' in window) {
     });
 
 }
+
+
+// FORM
+function changeRating(int) {
+	document.getElementById("currentRating").innerHTML = int;
+}

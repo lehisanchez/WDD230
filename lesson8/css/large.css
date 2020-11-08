@@ -1,50 +1,73 @@
-@media (min-width: 1080px) {
-
+@media (min-width: 80rem) {
     header {
-        height: 120px;
+      height: 120px;
     }
-
+  
+    #branding,
+  nav ul,
+  form,
+  footer {
+      max-width: 80rem;
+    }
+  
+    footer {
+      margin: 0 auto;
+    }
+  
     #letterhead h1 {
-        font-size: 3em;
+      font-size: 3em;
     }
-    
+  
     #letterhead span {
-        font-size: 1.2em;
+      font-size: 1.2em;
     }
-
-    nav a  {
-        font-size: 1em;
+  
+    nav a {
+      font-size: 1em;
     }
-
+  
     main.gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
-
+  
     main.gallery .image-card:hover {
-        box-shadow: 10px 10px 8px #888888;
-        cursor: pointer;
+      box-shadow: 10px 10px 8px #888888;
+      cursor: pointer;
     }
-
+  
     #current-temperature {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin: 10px 0 0 10px;
-        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
-        transition-property: grid-column;
-        transition-duration: 4s;
-        transition-delay: 2s;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin: 10px 0 0 10px;
+      box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+      transition-property: grid-column;
+      transition-duration: 4s;
+      transition-delay: 2s;
     }
-
+  
     #article img {
-        max-width: 20%;
+      max-width: 20%;
     }
-
+  
     #contact {
-        max-width: 1080px;
+      max-width: 1080px;
     }
-
-
-}
+  
+    #StormCenterForm {
+      max-width: 40rem;
+    }
+  
+    form label.top input,
+  form label.top select {
+      max-width: 40rem;
+      font-size: 0.8rem;
+      padding: 0.6rem;
+    }
+  
+    form label.sbs {
+      padding: 0.4rem 0;
+    }
+  }
