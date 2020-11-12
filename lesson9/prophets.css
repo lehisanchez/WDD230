@@ -1,0 +1,74 @@
+body {
+    font-family: 'Libre Baskerville';
+    background-color: #eee;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 400px;
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 15px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    background-color: white;
+}
+
+span {
+    display: block;
+    font-size: .8em;
+    line-height: 1.7em;
+}
+
+.image-wrapper {
+    width: 250px;
+    height: 300px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+img {
+    /* min-height: 100%; */
+    max-width: 100%;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .cards {
+        max-width: 800px;
+        column-gap: 25px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards {
+        max-width: 1200px;
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
