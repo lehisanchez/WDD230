@@ -1,16 +1,17 @@
-@media (min-width: 600px) {
+$container-width: 800px;
+
+@media (min-width: $container-width) {
+
+    // ---------- HEADER ----------
 
     header {
         display: block;
+        flex-direction: column;
         height: 80px;
 
         #branding {
             margin: 0 auto;
-            max-width: 1080px;
-        }
-
-        #hamburger {
-            display: none;
+            width: $container-width;
         }
 
         #letterhead h1 {
@@ -18,57 +19,99 @@
         }
 
         #letterhead span {
-            font-size: 1em;
+            font-size: .9em;
+        }
+
+        #hamburger {
+            display: none;
+        }
+    }
+
+
+    // ---------- NAVIGATION ----------
+
+    nav {
+        ul {
+            flex-direction: row;
+            max-width: $container-width;
+
+            li {
+                display: block;
+
+                a {
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+
+
+
+    // ---------- MAIN ----------
+
+    main {
+
+        h2 {
+            text-align: left;
+        }
+    }
+
+    main {
+        width: $container-width;
+    }
+
+    main.gallery {
+        grid-template-columns: 1fr 1fr;
+        width: $container-width;
+
+        .image-card {
+            padding: 10px;
+            background-color: white;
+        }
+
+        .image-card img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+
+        img[data-src] {
+            filter: blur(0.2em);
+        }
+
+        img {
+            filter: blur(0em);
+            transition: filter 0.5s;
         }
 
     }
 
 
+    // ---------- HERO ----------
 
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        max-width: 1024px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
+    #hero {
+        grid-template-rows: repeat(2, 1fr);
 
-    nav ul li {
-        display: block;
-    }
+        picture {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
 
-    nav a {
-        font-size: .9em;
-    }
-
-    main h2 {
-        text-align: left;
-    }
-
-    main.gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    #hero h2 {
-        text-align: left;
-    }
-
-    #current-temperature {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin: 10px 0 0 10px;
-        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+        #current-temperature {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
     }
 
     #forecast {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
         margin-bottom: 30px;
         padding-top: 20px;
     }
@@ -120,6 +163,31 @@
     #contact img {
         display: inline;
         width: 40%;
+    }
+
+
+    // ---------- FORM ----------
+
+    form {
+        width: $container-width;
+
+        label.top input,
+        label.top select {
+            max-width: $container-width;
+        }
+    }
+
+
+    // ---------- FOOTER ----------
+
+    footer {
+        width: $container-width;
+        margin: 0 auto;
+        padding: 30px 15px 30px 15px;
+        font-size: .8em;
+        color: #fff;
+        text-align: center;
+        background-color: var(--color-navigation-hover);
     }
 
 }

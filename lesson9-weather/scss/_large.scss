@@ -1,7 +1,15 @@
-@media (min-width: 1080px) {
+$container-width: 1200px;
+
+@media (min-width: $container-width) {
+
+    // ---------- HEADER ----------
 
     header {
         height: 120px;
+
+        #branding {
+            width: $container-width;
+        }
 
         #letterhead h1 {
             font-size: 3em;
@@ -12,12 +20,37 @@
         }
     }
 
-    nav a {
-        font-size: 1em;
+
+
+    // ---------- NAVIGATION ----------
+
+    nav {
+        ul {
+            max-width: $container-width;
+
+            li {
+                display: block;
+
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+
+
+    // ---------- MAIN ----------
+
+    main {
+        width: $container-width;
     }
 
     main.gallery {
-        display: grid;
+        width: $container-width;
+    }
+
+    main.gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -26,16 +59,24 @@
         cursor: pointer;
     }
 
-    #current-temperature {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin: 10px 0 0 10px;
-        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
-        transition-property: grid-column;
-        transition-duration: 4s;
-        transition-delay: 2s;
+    // ---------- HERO ----------
+
+    #hero {
+        grid-template-rows: repeat(3, 1fr);
+
+        picture {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        #current-temperature {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
     }
 
     #article img {
@@ -43,7 +84,34 @@
     }
 
     #contact {
-        max-width: 1080px;
+        max-width: $container-width;
+    }
+
+
+
+    // ---------- FORM ----------
+
+    form {
+        width: $container-width / 2;
+
+        label.top input,
+        label.top select {
+            max-width: $container-width / 2;
+            padding: 0.6rem;
+            font-size: 0.8rem;
+        }
+
+        label.sbs {
+            padding: 0.4rem 0;
+        }
+    }
+
+
+
+    // ---------- FOOTER ----------
+
+    footer {
+        width: $container-width;
     }
 
 
