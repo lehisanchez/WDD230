@@ -9,9 +9,8 @@ fetch(requestURL)
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
 
-
-
-            // CREATE CARD ELEMENTS w/ CLASS ATTRIBUTES
+            if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+                            // CREATE CARD ELEMENTS w/ CLASS ATTRIBUTES
             // ----------------------------------------
             let townCard = document.createElement('div');
             townCard.setAttribute('class', 'town-card');
@@ -72,5 +71,8 @@ fetch(requestURL)
             // APPEND TO HTML
             // ----------------------------------------
             document.querySelector('section.town-cards').appendChild(townCard);
+            }
+
+
         }
     });
