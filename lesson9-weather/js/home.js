@@ -70,7 +70,7 @@ fetch(requestURL)
 
             // APPEND TO HTML
             // ----------------------------------------
-            document.querySelector('section.town-cards').appendChild(townCard);
+            document.querySelector('div.town-cards').appendChild(townCard);
             }
 
 
