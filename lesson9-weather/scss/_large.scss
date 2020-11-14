@@ -59,6 +59,21 @@ $container-width: 1200px;
         cursor: pointer;
     }
 
+
+    // ---------- TOWN CARDS ----------
+
+    .town-cards {
+        grid-template-columns: repeat(6, 1fr);
+
+        .town-card {
+            flex-direction: column !important;
+
+            .town-card-information {
+                width: 100%;
+            }
+        }
+    }
+
     // ---------- HERO ----------
 
     #hero {

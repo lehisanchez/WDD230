@@ -178,6 +178,14 @@ main {
         text-align: center;
     }
 
+    picture {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
 }
 
 main.gallery {
@@ -218,6 +226,59 @@ main.thankyou {
     p {
         text-align: center;
     }
+}
+
+
+
+// ---------- TOWN CARDS ----------
+
+.town-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    color: white;
+    width: 100%;
+    margin: 15px 0;
+
+    .town-card {
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: #083d77;
+
+        .town-card-information {
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+
+            h3 {
+                font-size: 2.5em;
+                line-height: 1.5em;
+                text-align: center;
+            }
+
+            span {
+                display: block;
+                line-height: 1.7em;
+
+                &.town-motto {
+                    margin-bottom: 30px;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .town-card-image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 

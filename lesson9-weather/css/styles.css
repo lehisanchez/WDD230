@@ -151,6 +151,12 @@ main h2 {
   font-size: 2em;
   text-align: center;
 }
+main picture {
+  width: 100%;
+}
+main picture img {
+  width: 100%;
+}
 
 main.gallery {
   display: grid;
@@ -181,6 +187,46 @@ main.thankyou h1 {
 }
 main.thankyou p {
   text-align: center;
+}
+
+.town-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15px;
+  row-gap: 15px;
+  color: white;
+  width: 100%;
+  margin: 15px 0;
+}
+.town-cards .town-card {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #083d77;
+}
+.town-cards .town-card .town-card-information {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.town-cards .town-card .town-card-information h3 {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+.town-cards .town-card .town-card-information span {
+  display: block;
+  line-height: 1.7em;
+}
+.town-cards .town-card .town-card-information span.town-motto {
+  margin-bottom: 30px;
+  font-style: italic;
+}
+.town-cards .town-card .town-card-image img {
+  width: 100%;
 }
 
 #hero {
@@ -442,6 +488,16 @@ footer {
     transition: filter 0.5s;
   }
 
+  .town-cards .town-card {
+    flex-direction: row;
+  }
+  .town-cards .town-card .town-card-information {
+    width: 50%;
+  }
+  .town-cards .town-card:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
   #hero {
     grid-template-rows: repeat(2, 1fr);
   }
@@ -573,6 +629,16 @@ form label.top select {
   main.gallery .image-card:hover {
     box-shadow: 10px 10px 8px #888888;
     cursor: pointer;
+  }
+
+  .town-cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .town-cards .town-card {
+    flex-direction: column !important;
+  }
+  .town-cards .town-card .town-card-information {
+    width: 100%;
   }
 
   #hero {

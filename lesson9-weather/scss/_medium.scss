@@ -86,6 +86,23 @@ $container-width: 800px;
 
     }
 
+    // ---------- TOWN CARDS ----------
+
+    .town-cards {
+
+        .town-card {
+            flex-direction: row;
+
+            .town-card-information {
+                width: 50%;
+            }
+        }
+
+        .town-card:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+    }
 
     // ---------- HERO ----------
 
