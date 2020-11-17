@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WeatherBee | Thanks</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="branding">
+            <div id="logo">
+                <img src="images/logo.png" alt="WeatherBee Logo">
+            </div>
+            <div id="letterhead">
+                <h1>WeatherBee</h1>
+                <span>Weather for children</span>
+            </div>
+        </div>
+        <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Thank you!</h1>
+        <p>We appreciate your feedback!</p>
+        <p><a href="stormcenter.html">Click Here</a> to return to Storm Center Form.</p>
+    </main>
+
+    <footer>
+        <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span></div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Open Sans', 'Roboto']
+            }
+        });
+    </script>
+
+</body>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WeatherBee | Gallery</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="branding">
+            <div id="logo">
+                <img src="images/logo.png" alt="WeatherBee Logo">
+            </div>
+            <div id="letterhead">
+                <h1>WeatherBee</h1>
+                <span>Weather for children</span>
+            </div>
+        </div>
+        <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a class="active" href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="gallery">
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather01.jpg" alt="">
+            </picture>
+            <p>Lightning reported in the prairie.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather02.jpg" alt="">
+            </picture>
+            <p>Snow begins to fall in the city.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather03.jpg" alt="">
+            </picture>
+            <p>Rain clouds over a field.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather04.jpg" alt="">
+            </picture>
+            <p>Thunderstorms at night.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather05.jpg" alt="">
+            </picture>
+            <p>Rainbow over the prairie.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather06.jpg" alt="">
+            </picture>
+            <p>Lightning strikes at night.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather07.jpg" alt="">
+            </picture>
+            <p>Snow storm during the day.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather08.jpg" alt="">
+            </picture>
+            <p>Snow fall accumulates in the city.</p>
+        </div>
+        <div class="image-card">
+            <picture>
+                <img src="images/placeholder_gallery.png" data-src="images/Weather09.jpg" alt="">
+            </picture>
+            <p>Lightning strikes in the city.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span></div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Open Sans', 'Roboto']
+            }
+        });
+    </script>
+
+</body>
