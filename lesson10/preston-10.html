@@ -1,130 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>WeatherBee | Preston</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>WeatherBee | Preston</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <div id="branding">
-            <div id="logo">
-                <img src="images/logo.png" alt="WeatherBee Logo">
+        <header>
+            <div id="branding">
+                <div id="logo">
+                    <img src="images/logo.png" alt="WeatherBee Logo">
+                </div>
+                <div id="letterhead">
+                    <h1>WeatherBee</h1>
+                    <span>Weather for children</span>
+                </div>
             </div>
-            <div id="letterhead">
-                <h1>WeatherBee</h1>
-                <span>Weather for children</span>
-            </div>
-        </div>
-        <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
-    </header>
+            <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
 
-    <nav>
-        <ul id="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="preston-6.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
 
-    <main>
+        <main>
 
-        <h2>Preston Idaho</h2>
+            <h2>Preston Idaho</h2>
 
-        <section id="hero">
+            <section id="hero">
 
-            <picture>
-                <source media="(min-width: 1200px)" srcset="images/Hero_Image_1100.jpg">
-                <source media="(min-width: 800px)" srcset="images/Hero_Image_800.jpg">
-                <img src="images/Hero_Image_500.jpg" alt="Scenic view of sunrise.">
-            </picture>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/Hero_Image_1100.jpg">
+                    <source media="(min-width: 800px)" srcset="images/Hero_Image_800.jpg">
+                    <img src="images/Hero_Image_500.jpg" alt="Scenic view of sunrise.">
+                </picture>
 
-            <div id="current-temperature">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Weather Summary</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Currently:</td>
-                            <td>Sunny</td>
-                        </tr>
-                        <tr>
-                            <td>High:</td>
-                            <td><span id="currentTemperature">30</span>&deg; F</td>
-                        </tr>
-                        <tr>
-                            <td>Wind Chill:</td>
-                            <td><span id="currentWindChill"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Humidity:</td>
-                            <td>50%</td>
-                        </tr>
-                        <tr>
-                            <td>Wind Speed:</td>
-                            <td><span id="currentWindSpeed">10</span> mph</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <div id="current-temperature">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Weather Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Currently:</td>
+                                <td>Sunny</td>
+                            </tr>
+                            <tr>
+                                <td>High:</td>
+                                <td><span id="currentTemperature">30</span>&deg; F</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Chill:</td>
+                                <td><span id="currentWindChill"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Humidity:</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Speed:</td>
+                                <td><span id="currentWindSpeed">10</span> mph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-        </section>
+            </section>
 
-        <h2>5-Day Forecast</h2>
+            <h2>5-Day Forecast</h2>
 
-        <section id="forecast">
-            <div><span>Monday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
-            <div><span>Tuesday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
-            <div><span>Wednesday</span><img src="images/forecast_sun_snow.png" alt="Sunny"><span>50&deg;</span></div>
-            <div><span>Thursday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
-            <div><span>Friday</span><img src="images/forecast_rain.png" alt="Sunny"><span>50&deg;</span></div>
-        </section>
+            <section id="forecast">
+                <div><span>Monday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
+                <div><span>Tuesday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
+                <div><span>Wednesday</span><img src="images/forecast_sun_snow.png" alt="Sunny"><span>50&deg;</span></div>
+                <div><span>Thursday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
+                <div><span>Friday</span><img src="images/forecast_rain.png" alt="Sunny"><span>50&deg;</span></div>
+            </section>
 
-        <section id="article">
-            <img src="images/child.jpg" alt="child">
-            <h2>Article Title</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-        </section>
+            <section id="article">
+                <img src="images/child.jpg" alt="child">
+                <h2>Article Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+            </section>
 
-        <section id="contact">
-            <div>
-                <h2>Contact Information</h2>
-                <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
-                <p>contact@weatherbee.org</p>
-            </div>
-            <img src="images/map.png" alt="map">
-        </section>
+            <section id="contact">
+                <div>
+                    <h2>Contact Information</h2>
+                    <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
+                    <p>contact@weatherbee.org</p>
+                </div>
+                <img src="images/map.png" alt="map">
+            </section>
 
-    </main>
+        </main>
 
-    <footer>
-        <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span></div>
-    </footer>
+        <footer>
+            <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span></div>
+        </footer>
 
-    <script src="js/scripts.js" defer></script>
+        <script src="js/scripts.js" defer></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ['Open Sans', 'Roboto']
-            }
-        });
-    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Open Sans', 'Roboto']
+                }
+            });
 
-</body>
+        </script>
+    </body>
+
+</html>

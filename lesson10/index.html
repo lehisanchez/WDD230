@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>WeatherBee | Home</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>WeatherBee | Home</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+    </head>
 
-<body>
-
-    <header>
-        <div id="branding">
-            <div id="logo">
-                <img src="images/logo.png" alt="WeatherBee Logo">
+    <body>
+        <header>
+            <div id="branding">
+                <div id="logo">
+                    <img src="images/logo.png" alt="WeatherBee Logo">
+                </div>
+                <div id="letterhead">
+                    <h1>WeatherBee</h1>
+                    <span>Weather for children</span>
+                </div>
             </div>
-            <div id="letterhead">
-                <h1>WeatherBee</h1>
-                <span>Weather for children</span>
+            <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </header>
+
+        <nav>
+            <ul id="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/Banner_Image_1200.jpg">
+                <source media="(min-width: 800px)" srcset="images/Banner_Image_800.jpg">
+                <img src="images/Banner_Image_500.jpg" alt="Scenic view of sunrise.">
+            </picture>
+
+            <div class="town-cards">
+
             </div>
-        </div>
-        <div id="hamburger" onclick="toggleMenu()">&#9776;</div>
-    </header>
 
-    <nav>
-        <ul id="navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="preston-6.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
-        </ul>
-    </nav>
+            <section id="article">
+                <img src="images/child.jpg" alt="child">
+                <h2>Featured Article</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
+            </section>
 
-    <main>
+            <section id="contact">
+                <div>
+                    <h2>Contact Information</h2>
+                    <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
+                    <p>contact@weatherbee.org</p>
+                </div>
+                <img src="images/map.png" alt="map">
+            </section>
+        </main>
 
-        <picture>
-            <source media="(min-width: 1200px)" srcset="images/Banner_Image_1200.jpg">
-            <source media="(min-width: 800px)" srcset="images/Banner_Image_800.jpg">
-            <img src="images/Banner_Image_500.jpg" alt="Scenic view of sunrise.">
-        </picture>
+        <footer>
+            <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span> | <a href="home-wireframes.html">Wireframes</a></div>
+        </footer>
 
-        <div class="town-cards">
+        <script src="js/scripts.js" defer></script>
+        <script src="js/home.js" defer></script>
 
-        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Open Sans', 'Roboto']
+                }
+            });
 
-        <section id="article">
-            <img src="images/child.jpg" alt="child">
-            <h2>Featured Article</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-        </section>
+        </script>
 
-        <section id="contact">
-            <div>
-                <h2>Contact Information</h2>
-                <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
-                <p>contact@weatherbee.org</p>
-            </div>
-            <img src="images/map.png" alt="map">
-        </section>
-    </main>
+    </body>
 
-    <footer>
-        <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span> | <a href="home-wireframes.html">Wireframes</a></div>
-    </footer>
-
-    <script src="js/scripts.js" defer></script>
-    <script src="js/home.js" defer></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: ['Open Sans', 'Roboto']
-            }
-        });
-    </script>
-
-</body>
+</html>
