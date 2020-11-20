@@ -97,6 +97,10 @@
         grid-row-end: 2;
     }
 
+    .forecast-header {
+        display: block;
+    }
+
     #forecast {
         display: flex;
         flex-direction: row;

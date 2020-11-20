@@ -124,6 +124,10 @@ $container-width: 800px;
         }
     }
 
+    .forecast-header {
+        display: block;
+    }
+
     #forecast {
         display: flex;
         flex-direction: row;

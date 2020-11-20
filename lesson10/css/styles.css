@@ -281,7 +281,8 @@ main.thankyou p {
   color: var(--color-yellow);
 }
 
-#forecast {
+#forecast,
+.forecast-header {
   display: none;
 }
 
@@ -428,6 +429,9 @@ footer {
   text-align: center;
   background-color: var(--color-navigation-hover);
 }
+footer a {
+  color: white;
+}
 
 @media (min-width: 800px) {
   header {
@@ -512,6 +516,10 @@ footer {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+
+  .forecast-header {
+    display: block;
   }
 
   #forecast {

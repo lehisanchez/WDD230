@@ -29,7 +29,7 @@
         <nav>
             <ul id="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="preston-6.html">Preston</a></li>
+                <li><a class="active" href="preston-10.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
@@ -59,11 +59,11 @@
                         <tbody>
                             <tr>
                                 <td>Currently:</td>
-                                <td>Sunny</td>
+                                <td><span id="currentDescription"></span></td>
                             </tr>
                             <tr>
-                                <td>High:</td>
-                                <td><span id="currentTemperature">30</span>&deg; F</td>
+                                <td>Temperature:</td>
+                                <td><span id="currentTemperature"></span></td>
                             </tr>
                             <tr>
                                 <td>Wind Chill:</td>
@@ -71,11 +71,11 @@
                             </tr>
                             <tr>
                                 <td>Humidity:</td>
-                                <td>50%</td>
+                                <td><span id="currentHumidity"></span></td>
                             </tr>
                             <tr>
                                 <td>Wind Speed:</td>
-                                <td><span id="currentWindSpeed">10</span> mph</td>
+                                <td><span id="currentWindSpeed"></span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -83,14 +83,10 @@
 
             </section>
 
-            <h2>5-Day Forecast</h2>
+            <h2 class="forecast-header">5-Day Forecast</h2>
 
             <section id="forecast">
-                <div><span>Monday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
-                <div><span>Tuesday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
-                <div><span>Wednesday</span><img src="images/forecast_sun_snow.png" alt="Sunny"><span>50&deg;</span></div>
-                <div><span>Thursday</span><img src="images/forecast_sun.png" alt="Sunny"><span>50&deg;</span></div>
-                <div><span>Friday</span><img src="images/forecast_rain.png" alt="Sunny"><span>50&deg;</span></div>
+
             </section>
 
             <section id="article">
@@ -117,6 +113,8 @@
         </footer>
 
         <script src="js/scripts.js" defer></script>
+        <script src="js/weather.js"></script>
+        <script src="js/windchill.js" defer></script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
