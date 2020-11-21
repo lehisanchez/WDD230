@@ -420,6 +420,18 @@ form #currentRating {
   font-size: 2em;
 }
 
+.town-fish-haven {
+  order: 3;
+}
+
+.town-preston {
+  order: 1;
+}
+
+.town-soda-springs {
+  order: 2;
+}
+
 footer {
   width: 100%;
   margin: 0 auto;
@@ -498,7 +510,7 @@ footer a {
   .town-cards .town-card .town-card-information {
     width: 50%;
   }
-  .town-cards .town-card:nth-child(odd) {
+  .town-cards .town-soda-springs {
     flex-direction: row-reverse;
   }
 
