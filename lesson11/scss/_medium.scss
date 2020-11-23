@@ -1,0 +1,214 @@
+$container-width: 800px;
+
+@media (min-width: $container-width) {
+
+    // ---------- HEADER ----------
+
+    header {
+        display: block;
+        flex-direction: column;
+        height: 80px;
+
+        #branding {
+            margin: 0 auto;
+            width: $container-width;
+        }
+
+        #letterhead h1 {
+            font-size: 1.7em;
+        }
+
+        #letterhead span {
+            font-size: .9em;
+        }
+
+        #hamburger {
+            display: none;
+        }
+    }
+
+
+    // ---------- NAVIGATION ----------
+
+    nav {
+        ul {
+            flex-direction: row;
+            max-width: $container-width;
+
+            li {
+                display: block;
+
+                a {
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+
+
+
+    // ---------- MAIN ----------
+
+    main {
+
+        h2 {
+            text-align: left;
+        }
+    }
+
+    main {
+        width: $container-width;
+    }
+
+    main.gallery {
+        grid-template-columns: 1fr 1fr;
+        width: $container-width;
+
+        .image-card {
+            padding: 10px;
+            background-color: white;
+        }
+
+        .image-card img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+
+        img[data-src] {
+            filter: blur(0.2em);
+        }
+
+        img {
+            filter: blur(0em);
+            transition: filter 0.5s;
+        }
+
+    }
+
+    // ---------- TOWN CARDS ----------
+
+    .town-cards {
+
+        .town-card {
+            flex-direction: row;
+
+            .town-card-information {
+                width: 50%;
+            }
+        }
+
+        .town-soda-springs {
+            flex-direction: row-reverse;
+        }
+
+    }
+
+    // ---------- HERO ----------
+
+    #hero {
+        grid-template-rows: repeat(2, 1fr);
+
+        picture {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        #current-temperature {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+
+    .forecast-header {
+        display: block;
+    }
+
+    #forecast {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    #forecast div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        height: 100px;
+        margin-bottom: 50px;
+    }
+
+    #forecast img {
+        max-height: 90%;
+        max-width: 90%;
+    }
+
+    #forecast div span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #article img {
+        max-width: 50%;
+        float: right;
+        margin: 0 0 20px 20px;
+        box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+    }
+
+    #contact {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+    #contact div {
+        width: 40%;
+    }
+
+    #contact h2 {
+        margin-bottom: 30px;
+    }
+
+    #contact img {
+        display: inline;
+        width: 40%;
+    }
+
+
+    // ---------- FORM ----------
+
+    form {
+        width: $container-width;
+
+        label.top input,
+        label.top select {
+            max-width: $container-width;
+        }
+    }
+
+
+    // ---------- FOOTER ----------
+
+    footer {
+        width: $container-width;
+        margin: 0 auto;
+        padding: 30px 15px 30px 15px;
+        font-size: .8em;
+        color: #fff;
+        text-align: center;
+        background-color: var(--color-navigation-hover);
+    }
+
+}

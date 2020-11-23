@@ -1,0 +1,133 @@
+$container-width: 1200px;
+
+@media (min-width: $container-width) {
+
+    // ---------- HEADER ----------
+
+    header {
+        height: 120px;
+
+        #branding {
+            width: $container-width;
+        }
+
+        #letterhead h1 {
+            font-size: 3em;
+        }
+
+        #letterhead span {
+            font-size: 1.2em;
+        }
+    }
+
+
+
+    // ---------- NAVIGATION ----------
+
+    nav {
+        ul {
+            max-width: $container-width;
+
+            li {
+                display: block;
+
+                a {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+
+
+    // ---------- MAIN ----------
+
+    main {
+        width: $container-width;
+    }
+
+    main.gallery {
+        width: $container-width;
+    }
+
+    main.gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main.gallery .image-card:hover {
+        box-shadow: 10px 10px 8px #888888;
+        cursor: pointer;
+    }
+
+
+    // ---------- TOWN CARDS ----------
+
+    .town-cards {
+        grid-template-columns: repeat(6, 1fr);
+
+        .town-card {
+            flex-direction: column !important;
+
+            .town-card-information {
+                width: 100%;
+            }
+        }
+    }
+
+    // ---------- HERO ----------
+
+    #hero {
+        grid-template-rows: repeat(3, 1fr);
+
+        picture {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        #current-temperature {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+
+    #article img {
+        max-width: 20%;
+    }
+
+    #contact {
+        max-width: $container-width;
+    }
+
+
+
+    // ---------- FORM ----------
+
+    form {
+        width: $container-width / 2;
+
+        label.top input,
+        label.top select {
+            max-width: $container-width / 2;
+            padding: 0.6rem;
+            font-size: 0.8rem;
+        }
+
+        label.sbs {
+            padding: 0.4rem 0;
+        }
+    }
+
+
+
+    // ---------- FOOTER ----------
+
+    footer {
+        width: $container-width;
+    }
+
+
+}
