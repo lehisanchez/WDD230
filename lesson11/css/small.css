@@ -156,11 +156,14 @@ main h2 {
   text-align: center;
 }
 main picture {
-  margin-top: 2rem;
   width: 100%;
 }
 main picture img {
   width: 100%;
+}
+
+main.home picture {
+  margin-top: 2rem;
 }
 
 main.gallery {

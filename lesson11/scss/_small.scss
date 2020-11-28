@@ -183,7 +183,6 @@ main {
     }
 
     picture {
-        margin-top: 2rem;
         width: 100%;
 
         img {
@@ -191,6 +190,10 @@ main {
         }
     }
 
+}
+
+main.home picture {
+    margin-top: 2rem;
 }
 
 main.gallery {
