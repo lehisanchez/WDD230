@@ -39,7 +39,7 @@
 
         <main>
 
-            <h2>Preston Idaho</h2>
+            <h2>Fish Haven</h2>
 
             <section id="hero">
 
@@ -112,12 +112,17 @@
             <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span></div>
         </footer>
 
-        <script src="js/scripts.js" defer></script>
-        <script src="js/weather.js"></script>
-        <script src="js/windchill.js" defer></script>
-
+        <script src="js/scripts.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
+            let latitude = 42.0380399;
+            let longitude = -111.4048681;
+
+            getWeatherByCoordinates(latitude, longitude);
+            getForecastByCoordinates(latitude, longitude);
+
+            updateFooter();
+
             WebFont.load({
                 google: {
                     families: ['Open Sans', 'Roboto']

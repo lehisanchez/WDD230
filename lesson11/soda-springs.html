@@ -39,7 +39,7 @@
 
         <main>
 
-            <h2>Preston Idaho</h2>
+            <h2>Soda Springs</h2>
 
             <section id="hero">
 
@@ -112,12 +112,14 @@
             <div class="copyright">&copy; <span id="copyright-year"></span> WeatherBee.io | Last updated: <span id="modified-date"></span></div>
         </footer>
 
-        <script src="js/scripts.js" defer></script>
-        <script src="js/weather.js"></script>
-        <script src="js/windchill.js" defer></script>
-
+        <script src="js/scripts.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
+            let cityId = 5607916;
+            getForecastByCityId(cityId);
+            getWeatherByCityId(cityId);
+            updateFooter();
+
             WebFont.load({
                 google: {
                     families: ['Open Sans', 'Roboto']
