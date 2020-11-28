@@ -1,105 +1,94 @@
 @media (min-width: 1200px) {
-    header {
-        height: 120px;
-    }
+  header {
+    height: 120px;
+  }
+  header #branding {
+    width: 1200px;
+  }
+  header #letterhead h1 {
+    font-size: 3em;
+  }
+  header #letterhead span {
+    font-size: 1.2em;
+  }
 
-    header #branding {
-        width: 1200px;
-    }
+  nav ul {
+    max-width: 1200px;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 1em;
+  }
 
-    header #letterhead h1 {
-        font-size: 3em;
-    }
+  main {
+    width: 1200px;
+  }
 
-    header #letterhead span {
-        font-size: 1.2em;
-    }
+  main.gallery {
+    width: 1200px;
+  }
 
-    nav ul {
-        max-width: 1200px;
-    }
+  main.gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    nav ul li {
-        display: block;
-    }
+  main.gallery .image-card:hover {
+    box-shadow: 10px 10px 8px #888888;
+    cursor: pointer;
+  }
 
-    nav ul li a {
-        font-size: 1em;
-    }
+  .town-cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .town-cards .town-card {
+    flex-direction: column !important;
+  }
+  .town-cards .town-card .town-card-information {
+    width: 100%;
+  }
 
-    main {
-        width: 1200px;
-    }
+  #hero {
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #hero picture {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  #hero #current-temperature {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 
-    main.gallery {
-        width: 1200px;
-    }
+  #article img {
+    max-width: 20%;
+  }
 
-    main.gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  #contact {
+    max-width: 1200px;
+  }
 
-    main.gallery .image-card:hover {
-        box-shadow: 10px 10px 8px #888888;
-        cursor: pointer;
-    }
+  form {
+    width: 600px;
+  }
+  form label.top input,
+form label.top select {
+    max-width: 600px;
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+  form label.sbs {
+    padding: 0.4rem 0;
+  }
 
-    .town-cards {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    .town-cards .town-card {
-        flex-direction: column !important;
-    }
-
-    .town-cards .town-card .town-card-information {
-        width: 100%;
-    }
-
-    #hero {
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    #hero picture {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 4;
-    }
-
-    #hero #current-temperature {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    #article img {
-        max-width: 20%;
-    }
-
-    #contact {
-        max-width: 1200px;
-    }
-
-    form {
-        width: 600px;
-    }
-
-    form label.top input,
-    form label.top select {
-        max-width: 600px;
-        padding: 0.6rem;
-        font-size: 0.8rem;
-    }
-
-    form label.sbs {
-        padding: 0.4rem 0;
-    }
-
-    footer {
-        width: 1200px;
-    }
+  footer {
+    width: 1200px;
+  }
 }
 
 /*# sourceMappingURL=large.css.map */

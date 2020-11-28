@@ -41,12 +41,12 @@
 
             <h2>Soda Springs</h2>
 
-            <section id="hero">
+            <div id="hero">
 
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="images/Hero_Preston_Image_1200.jpg">
-                    <source media="(min-width: 800px)" srcset="images/Hero_Preston_Image_800.jpg">
-                    <img src="images/Hero_Preston_Image_500.jpg" alt="Scenic view of sunrise.">
+                    <source media="(min-width: 1200px)" srcset="images/Hero_Soda_Springs_Image_1200.jpg">
+                    <source media="(min-width: 800px)" srcset="images/Hero_Soda_Springs_Image_800.jpg">
+                    <img src="images/Hero_Soda_Springs_Image_500.jpg" alt="Scenic view of Soda Springs, Idaho.">
                 </picture>
 
                 <div id="current-temperature">
@@ -81,30 +81,64 @@
                     </table>
                 </div>
 
-            </section>
+            </div>
 
             <h2 class="forecast-header">5-Day Forecast</h2>
 
-            <section id="forecast">
+            <div id="forecast">
 
-            </section>
+            </div>
 
-            <section id="article">
-                <img src="images/child.jpg" alt="child">
-                <h2>Article Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-            </section>
+            <div id="article">
+                <img src="images/lights.jpg" alt="christmas lights">
+                <h2>Idaho Botanical Garden will light up the holiday season with Winter Garden aGlow</h2>
+                <p>
+                    BOISE, Idaho — Idaho Botanical Garden will light up the holiday season as the Garden is transformed into a twinkling wonderland from November 26-December 27.
+                </p>
 
-            <section id="contact">
+                <p>
+                    The Garden will feature Santa and Mrs. Claus, snacks and warm drinks from local vendors, and a holiday express model train display. Guests can also wander through the coolest tunnel of lights in Boise and see what wondrous creation Illumicone has in store for you this year.
+                </p>
+
+                <p>
+                    <strong>Social Distancing/Safety Guidelines</strong>
+                </p>
+
+                <p>
+                    Idaho Botanical Garden is doing their part to help protect guests while visiting Winter Garden aGlow.
+                </p>
+
+                <p>
+                    The following guidelines will be in place while attending Winter Garden aGlow:
+                    <ul>
+                        <li>
+                            All guests will be required to wear masks.
+                        </li>
+                        <li>
+                            Guests should leave 6 ft of space between guests outside their party.
+                        </li>
+                        <li>
+                            For guest's safety, there is a one-way path leading through the winter wonderland, and backtracking is not allowed.
+                        </li>
+                    </ul>
+                </p>
+
+                <p><a href="https://www.ktvb.com/article/news/community/idaho-botanical-garden-winter-garden-aglow-thousandsoflights/277-fca68d9a-3280-4375-8331-937ac6aa8d09">Continue Reading</a></p>
+
+            </div>
+
+            <h2>Events</h2>
+
+            <div id="events"></div>
+
+            <div id="contact">
                 <div>
                     <h2>Contact Information</h2>
                     <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
                     <p>contact@weatherbee.org</p>
                 </div>
                 <img src="images/map.jpg" alt="map">
-            </section>
+            </div>
 
         </main>
 
@@ -116,13 +150,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
             let cityId = 5607916;
+
             getForecastByCityId(cityId);
             getWeatherByCityId(cityId);
+
+            getTownEvents("Soda Springs");
+
             updateFooter();
 
             WebFont.load({
                 google: {
-                    families: ['Open Sans', 'Roboto']
+                    families: ['Open Sans:400,700', 'Roboto:400,700']
                 }
             });
 

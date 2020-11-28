@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <title>WeatherBee | Preston</title>
         <link rel="stylesheet" href="css/normalize.css">
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
@@ -40,12 +41,12 @@
 
             <h2>Preston</h2>
 
-            <section id="hero">
+            <div id="hero">
 
                 <picture>
                     <source media="(min-width: 1200px)" srcset="images/Hero_Preston_Image_1200.jpg">
                     <source media="(min-width: 800px)" srcset="images/Hero_Preston_Image_800.jpg">
-                    <img src="images/Hero_Preston_Image_500.jpg" alt="Scenic view of sunrise.">
+                    <img src="images/Hero_Preston_Image_500.jpg" alt="Scenic view of Preston, Idaho.">
                 </picture>
 
                 <div id="current-temperature">
@@ -80,30 +81,64 @@
                     </table>
                 </div>
 
-            </section>
+            </div>
 
             <h2 class="forecast-header">5-Day Forecast</h2>
 
-            <section id="forecast">
+            <div id="forecast">
 
-            </section>
+            </div>
 
-            <section id="article">
-                <img src="images/child.jpg" alt="child">
-                <h2>Article Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-            </section>
+            <div id="article">
+                <img src="images/skier.jpg" alt="skier">
+                <h2>Like everything, 2020 affecting Bridgerland winter sports</h2>
+                <p>
+                    Whether you’re new to the world of winter sports or you’re a backcountry veteran praying for snow, it’s important to know the safety recommendations for the coming season, for the times they are a-changin’.
+                </p>
 
-            <section id="contact">
+                <p>
+                    Travis Seeholzer, the operations manager at Beaver Mountain, said this year as a result of the COVID-19 pandemic, patrons can expect changes to mountain functions and accessibility. According to Seeholzer, there will be a near 60-percent reduction of those allowed in the day lodge, and mountain patrons are encouraged to use their vehicles for changing, booting up and eating.
+                </p>
+
+                <p>
+                    "This season, you treat your car like the lodge," Seeholzer said. "The overriding goal is to just do everything we can to save our ski season."
+                </p>
+                <p>
+                    Seeholzer said food trucks, a rental tent and additional seating will be provided to help manage the changes. "Ghost lanes" will be incorporated to ensure social distancing measures while skiers and snowboards wait in line for the lift, and face coverings will be required.
+                </p>
+
+                <p>
+                    Seeholzer said, however, tailgaters will be allowed to continue with their business as usual.
+                </p>
+
+                <p>
+                    "It’s going to be different," Seeholzer said. "We hope the shredding part is good and pretty normal."
+                </p>
+
+                <p>
+                    Beaver Mountain Ski Patrol Director Ken Mathys said only members of the all-volunteer patrol team and injured guests will be allowed in the ski patrol building. Mathys said if the injured guest is a child, one responsible party will be allowed with them.
+                </p>
+
+                <p>
+                    "We’re taking it pretty serious as far as keeping the patrol healthy," Mathys said. "It’ll be completely different."
+                </p>
+
+                <p><a href="https://www.hjnews.com/coronavirus/like-everything-2020-affecting-bridgerland-winter-sports/article_24443671-b77d-5206-8a11-e6338e08a837.html">Continue Reading</a></p>
+            </div>
+
+            <h2>Events</h2>
+
+            <div id="events">
+            </div>
+
+            <div id="contact">
                 <div>
                     <h2>Contact Information</h2>
                     <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
                     <p>contact@weatherbee.org</p>
                 </div>
                 <img src="images/map.jpg" alt="map">
-            </section>
+            </div>
 
         </main>
 
@@ -117,11 +152,12 @@
             let cityId = 5604473;
             getForecastByCityId(cityId);
             getWeatherByCityId(cityId);
+            getTownEvents("Preston");
             updateFooter();
 
             WebFont.load({
                 google: {
-                    families: ['Open Sans', 'Roboto']
+                    families: ['Open Sans:400,700', 'Roboto:400,700']
                 }
             });
 

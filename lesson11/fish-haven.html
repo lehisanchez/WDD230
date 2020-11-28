@@ -41,12 +41,12 @@
 
             <h2>Fish Haven</h2>
 
-            <section id="hero">
+            <div id="hero">
 
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="images/Hero_Preston_Image_1200.jpg">
-                    <source media="(min-width: 800px)" srcset="images/Hero_Preston_Image_800.jpg">
-                    <img src="images/Hero_Preston_Image_500.jpg" alt="Scenic view of sunrise.">
+                    <source media="(min-width: 1200px)" srcset="images/Hero_Fish_Haven_Image_1200.jpg">
+                    <source media="(min-width: 800px)" srcset="images/Hero_Fish_Haven_Image_800.jpg">
+                    <img src="images/Hero_Fish_Haven_Image_500.jpg" alt="Scenic view of Fish Haven, Idaho.">
                 </picture>
 
                 <div id="current-temperature">
@@ -81,30 +81,55 @@
                     </table>
                 </div>
 
-            </section>
+            </div>
 
             <h2 class="forecast-header">5-Day Forecast</h2>
 
-            <section id="forecast">
+            <div id="forecast">
 
-            </section>
+            </div>
 
-            <section id="article">
-                <img src="images/child.jpg" alt="child">
-                <h2>Article Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-            </section>
+            <div id="article">
+                <img src="images/family.jpg" alt="family singing">
+                <h2>Church invites submissions for virtual Christmas concerts</h2>
+                <p>
+                    Christmas celebrations on Temple Square in Salt Lake City, Utah, usually include hundreds of musical performances throughout the month of December. Because of COVID-19 restrictions, Temple Square Performances will hold its Christmas concerts virtually this year, and all are invited to participate.
+                </p>
 
-            <section id="contact">
+                <p>
+                    The annual Savior of the World, a musical drama celebrating the birth and Resurrection of Jesus Christ, will not be held this year.
+                </p>
+
+                <p>
+                    Members of The Church of Jesus Christ of Latter-day Saints and friends of other faiths from across the world will have the opportunity to submit Christmas video performances.
+                </p>
+
+                <p>
+                    Since this is a replacement for English-only events that traditionally take place on Temple Square in Salt Lake City, Utah, this year's event allows for submissions in English only.
+                </p>
+
+                <p>
+                    The submissions will be edited into concerts and broadcast on ChurchofJesusChrist.org throughout the Christmas season. This year they also will become part of the annual Light the World Christmas campaign.
+                </p>
+
+                <p>
+                    The Light the World Christmas initiative focuses on celebrating and sharing the light of Jesus Christ in several ways, including music performances. Millions of people across the world participate in the annual initiative during the Christmas season.
+                </p>
+                <p><a href="https://www.hjnews.com/tremonton/church-invites-submissions-for-virtual-christmas-concerts/article_c791df61-e97a-574d-a23c-a7b281cce98c.html">Continue Reading</a></p>
+            </div>
+
+            <h2>Events</h2>
+
+            <div id="events"></div>
+
+            <div id="contact">
                 <div>
                     <h2>Contact Information</h2>
                     <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
                     <p>contact@weatherbee.org</p>
                 </div>
                 <img src="images/map.jpg" alt="map">
-            </section>
+            </div>
 
         </main>
 
@@ -121,11 +146,13 @@
             getWeatherByCoordinates(latitude, longitude);
             getForecastByCoordinates(latitude, longitude);
 
+            getTownEvents("Fish Haven");
+
             updateFooter();
 
             WebFont.load({
                 google: {
-                    families: ['Open Sans', 'Roboto']
+                    families: ['Open Sans:400,700', 'Roboto:400,700']
                 }
             });
 

@@ -43,6 +43,11 @@ h2 {
   margin-bottom: 10px;
 }
 
+strong {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -144,10 +149,9 @@ main {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding-top: 15px;
 }
 main h2 {
-  margin-bottom: 1rem;
+  margin: 3rem 0 3rem 0;
   font-size: 2em;
   text-align: center;
 }
@@ -305,6 +309,17 @@ main.thankyou p {
 #article p {
   margin-bottom: 1.7em;
   line-height: 1.7em;
+}
+
+#events {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.event-card {
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  background-color: white;
 }
 
 #contact {

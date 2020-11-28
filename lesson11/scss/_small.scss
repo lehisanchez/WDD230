@@ -43,6 +43,11 @@ h2 {
     margin-bottom: 10px;
 }
 
+strong {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
 
 
 // ---------- HEADER ----------
@@ -170,10 +175,9 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 15px;
 
     h2 {
-        margin-bottom: 1rem;
+        margin: 3rem 0 3rem 0;
         font-size: 2em;
         text-align: center;
     }
@@ -364,10 +368,29 @@ main.thankyou {
     background-color: white;
     border-radius: 5px;
     margin-bottom: 30px;
+
+    a,
+    a:visited {
+        font-weight: bold;
+        color: rgba(0, 50, 0, .9);
+    }
+
+    a:hover {
+        color: green;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    li {
+        line-height: 1.7rem;
+    }
 }
 
 #article h2 {
     margin-bottom: 1em;
+    text-transform: capitalize;
 }
 
 #article img {
@@ -380,6 +403,18 @@ main.thankyou {
     line-height: 1.7em;
 }
 
+
+// ---------- EVENTS ----------
+#events {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.event-card {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: white;
+}
 
 
 // ---------- CONTACT ----------

@@ -41,28 +41,45 @@
             <picture>
                 <source media="(min-width: 1200px)" srcset="images/Banner_Image_1200.jpg">
                 <source media="(min-width: 800px)" srcset="images/Banner_Image_800.jpg">
-                <img src="images/Banner_Image_500.jpg" alt="Scenic view of sunrise.">
+                <img src="images/Banner_Image_500.jpg" alt="WeatherBee Logo Banner">
             </picture>
 
             <div class="town-cards">
 
             </div>
 
-            <section id="article">
-                <img src="images/child.jpg" alt="child">
-                <h2>Featured Article</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel placeat odio laudantium iusto sapiente recusandae explicabo, inventore minus optio labore, officiis id, sunt hic ratione quo ipsa reprehenderit laboriosam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi consequuntur optio alias quaerat nemo odit totam, aspernatur assumenda et. Facilis provident nobis perspiciatis? Impedit tenetur veniam quidem laborum nam!</p>
-            </section>
+            <div id="article">
+                <img src="images/Santa.jpg" alt="Santa Claus">
+                <h2>Library is taking Santa Letters once again</h2>
+                <p>
+                    The Bear Lake County Library will once again be taking letters for Santa.
+                </p>
 
-            <section id="contact">
+                <p>
+                    The North Pole Mailbox is by the front doors, and children may drop their envelopes through the slot up until December 18. Be sure to include a return address because Santa or one of his elves will personally answer each one.
+                </p>
+
+                <p>
+                    The library has a large selection of Christmas books and movies the whole family will enjoy. We’re also having our annual new book sale for children.
+                </p>
+                <p>
+                    Unfortunately, Idaho is once again in Stage 2 of COVID recovery. As a result, Story Hour in the Montpelier branch of the library had to be cancelled along with the Mother-Daughter Book Club. However, the library is open from 10 a.m. to 6 p.m. Monday through Friday and from 10 a.m. to 2 p.m. on Saturday. Face coverings are required.
+                </p>
+
+                <p>
+                    Middle school age and high school age children are allowed to come in and check out items any day of the week. Younger children are allowed in on Fridays and Saturdays. They must be accompanied by an adult and are limited to the downstairs area.
+                </p>
+                <p><a href="https://www.hjnews.com/montpelier/library-is-taking-santa-letters-once-again/article_078c948b-552f-5be5-9c35-11e47c299c73.html">Continue Reading</a></p>
+            </div>
+
+            <div id="contact">
                 <div>
                     <h2>Contact Information</h2>
                     <p>1234 Acme Weather Lane<br>Boise, Idaho</p>
                     <p>contact@weatherbee.org</p>
                 </div>
                 <img src="images/map.jpg" alt="map">
-            </section>
+            </div>
         </main>
 
         <footer>
@@ -74,9 +91,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
             getTownCards();
+            updateFooter();
             WebFont.load({
                 google: {
-                    families: ['Open Sans', 'Roboto']
+                    families: ['Open Sans:400,700', 'Roboto:400,700']
                 }
             });
 
