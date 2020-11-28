@@ -109,6 +109,9 @@
   #forecast img {
     max-height: 90%;
     max-width: 90%;
+    margin-bottom: 10px;
+    background-color: #F4D35E;
+    border-radius: 5px;
   }
 
   #forecast div span {

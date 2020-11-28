@@ -410,7 +410,7 @@ form div,
 form textarea {
   display: block;
   padding-top: 0.5rem;
-  color: red;
+  color: #9e0000;
   font-size: 0.8rem;
 }
 form label.sbs {
