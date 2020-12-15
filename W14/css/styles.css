@@ -1,6 +1,7 @@
 body {
   font-family: "Rubik", sans-serif;
-  background-color: white;
+  background-color: #111;
+  color: #FBFBF2;
 }
 
 h1,
@@ -12,14 +13,30 @@ h6 {
   font-family: "Inter", sans-serif;
 }
 
+h1 {
+  font-size: 5em;
+  font-weight: 900;
+  color: #D81159;
+}
+
 .wrapper {
   width: 100%;
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 40vh;
   min-height: 300px;
-  background-color: black;
+  background-color: #111;
+  overflow: hidden;
+}
+.hero picture,
+.hero img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
