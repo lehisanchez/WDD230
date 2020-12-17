@@ -60,9 +60,9 @@ $header-height: 80px;
   }
 
   .hero {
-    min-height: 250px;
-    height: 50vh;
-    padding: 50px 0;
+    min-height: unset;
+    height: unset;
+    padding: 100px 0;
   }
 
   .main {
@@ -91,10 +91,11 @@ $header-height: 80px;
 
           article {
             width: 50%;
-            padding-left: 20px;
+            padding-left: 50px;
           }
 
           h3 {
+            font-size: 4em;
             text-align: left;
           }
         }
@@ -102,24 +103,35 @@ $header-height: 80px;
       }
 
       .wrapper--atv {
+
         .container {
           flex-direction: row-reverse;
         }
 
         article {
-          padding-right: 20px;
+          padding-right: 50px;
           padding-left: 0px;
 
           h3 {
+            font-size: 3em;
             text-align: right !important;
           }
         }
 
-
-
         .section__summary {
           text-align: right;
         }
+      }
+
+      .wrapper--weather,
+      .wrapper--forecast {
+        .container {
+          h3 {
+            font-size: 3em;
+
+          }
+        }
+
       }
 
       &__summary {
