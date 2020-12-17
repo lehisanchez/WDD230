@@ -1,7 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
 body {
-  font-family: "Rubik", sans-serif;
-  background-color: #111;
-  color: #FBFBF2;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Rubik";
 }
 
 h1,
@@ -10,17 +143,98 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
 }
 
-h1 {
-  font-size: 5em;
-  font-weight: 900;
-  color: #D81159;
+.container {
+  margin: auto;
+  padding: 0 10px;
 }
 
-.wrapper {
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #203746;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.header__wrapper {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__title {
+  display: none;
+  font-size: 1.7em;
+  font-weight: 900;
+  vertical-align: middle;
+}
+.header__logo {
+  height: 30px;
+  align-self: center;
+}
+.header__hamburger {
+  font-size: 2em;
+  cursor: pointer;
+}
+.header__hamburger--active {
+  transform: rotate(90deg);
+}
+
+.nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #305369;
+}
+.nav--hidden {
+  display: none;
+}
+.nav__list {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.nav__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-size: 2.2em;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  color: #fe761b;
+  background-color: #305369;
+}
+.nav__link:hover {
+  color: #203746;
+  background-color: #fe761b;
+}
+.nav__link--active {
+  color: #fcc01d;
+  background-color: #284557;
 }
 
 .hero {
@@ -28,21 +242,55 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40vh;
-  min-height: 300px;
-  background-color: #111;
-  overflow: hidden;
+  height: 300px;
+  padding-bottom: 50px;
+  background-color: #203746;
 }
-.hero picture,
-.hero img {
-  max-width: 100%;
-  height: auto;
+.hero__title {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  font-family: "Inter";
+  font-size: 7em;
+  font-weight: 700;
+  line-height: 8rem;
+  letter-spacing: -0.05em;
+  color: #8cb365;
+}
+.hero__subtitle {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 2.1em;
+  line-height: 2rem;
+  letter-spacing: -0.05em;
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.hero__button {
+  padding: 10px 50px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  background-color: #fe6601;
+  border-bottom: 5px solid #e45c01;
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+}
+.hero__button:hover {
+  color: black;
+  border-bottom: 5px solid #c99403;
+  background-color: #fcc01d;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 90%;
+.main {
+  padding-top: 60px;
+}
+.main .main__section {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

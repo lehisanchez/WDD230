@@ -4,28 +4,63 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scooters for tourists">
     <title>Scoots | Home</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <!-- <link rel="stylesheet" href="css/small.css"> -->
+    <!-- <link rel="stylesheet" href="css/medium.css"> -->
+    <!-- <link rel="stylesheet" href="css/large.css"> -->
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
-    <div class="wrapper">
-      <div class="hero">
-        <picture>
-          <!-- <source media="(min-width: 1200px)" srcset="images/Banner_Image_1200.jpg">
-          <source media="(min-width: 800px)" srcset="images/Banner_Image_800.jpg"> -->
-          <img src="images/scooters.jpg" alt="People on rented scooters">
-        </picture>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__wrapper">
+        <h1 class="header__title">Scoots</h1>
+        <img src="images/logo_white.png" class="header__logo" alt="Scoots Logo">
+        <div class="header__hamburger" id="navigationToggleButton" onclick="toggleNavigationVisibility()">&#9776;</div>
       </div>
-      <div class="container">
-        <h1>Scooters</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia quas similique est quos ratione, voluptatibus eligendi aut nihil iure blanditiis modi deserunt eaque voluptas et labore illum minima beatae!</p>
-      </div>
-    </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="nav nav--hidden" id="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Rentals</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="#">Reservations</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Tours</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h2 class="hero__title">Scoots</h2>
+      <span class="hero__subtitle">Motor Scooter Rentals</span>
+      <a href="#" class="hero__button">Make a Reservation</a>
+    </section>
+
+    <!-- CONTENT -->
+    <main class="main">
+      <section class="main__section main__rental"></section>
+      <section class="main__section main__rental"></section>
+      <section class="main__section main__call2action"></section>
+      <section class="main__section main__forcast"></section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+    </footer>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
@@ -36,7 +71,7 @@
       });
 
     </script>
-    <script src="js/scripts" defer></script>
+    <script src="js/scripts.js" defer></script>
   </body>
 
 </html>

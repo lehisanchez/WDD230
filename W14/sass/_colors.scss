@@ -1,0 +1,28 @@
+@use 'palette';
+
+// HEADER
+$header-text: white;
+$header-background: palette.$blue-900;
+
+// NAVIGATION
+$navigation-text: palette.$orange-400;
+$navigation-background: palette.$blue-800;
+
+$nav-hover-text: palette.$blue-900;
+$nav-hover-background: palette.$orange-400;
+
+$nav-active-text: palette.$yellow-400;
+$nav-active-background: darken($navigation-background, 5%);
+
+// HERO
+$hero-background: palette.$blue-900;
+
+$hero-title: palette.$green-400;
+$hero-subtitle-text: white;
+
+$hero-button-text: white;
+$hero-button-text-hover: black;
+$hero-button-background: palette.$orange-500;
+$hero-button-background-hover: palette.$yellow-400;
+$hero-button-border: palette.$orange-600;
+$hero-button-border-hover: palette.$yellow-700;
