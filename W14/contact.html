@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Motor scooter rental company in Cozumel, Mexico.">
+    <title>Scoots | Contact</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetchCurrentWeather();
+        fetchCurrentForecast();
+        updateFooter();
+      });
+
+    </script>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__wrapper">
+        <h1 class="header__title">Scoots</h1>
+        <img src="images/logo_white.png" class="header__logo" alt="Scoots Logo">
+        <div class="header__hamburger" id="navigationToggleButton" onclick="toggleNavigationVisibility()">&#9776;</div>
+      </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="nav nav--hidden" id="nav">
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="rentals.html">Rentals</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="tours.html">Tours</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="reservations.html">Reservations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h2 class="hero__title">Contact</h2>
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <h3>Links</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Rentals</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Reservations</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Tours</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Resources</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper">
+        <h3>Social</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Facebook</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Twitter</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper">
+        <h3>Information</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index.html">&copy; <span id="copyright-year"></span> Scoots Motor Company</a>
+          </li>
+          <li class="footer__item">
+            Last Modified <span id="modified-date"></span>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Inter:100,400,700,900', 'Ubuntu:300,400,700', 'Rubik:300,400,700']
+        }
+      });
+
+    </script>
+    <script src="js/scripts.js" defer></script>
+
+  </body>
+
+</html>
