@@ -23,7 +23,7 @@
 
     <!-- HEADER -->
     <header class="header">
-      <div class="container header__wrapper">
+      <div class="header__wrapper">
         <h1 class="header__title">Scoots</h1>
         <img src="images/logo_white.png" class="header__logo" alt="Scoots Logo">
         <div class="header__hamburger" id="navigationToggleButton" onclick="toggleNavigationVisibility()">&#9776;</div>
@@ -37,7 +37,7 @@
           <a class="nav__link" href="#">Rentals</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--active" href="#">Reservations</a>
+          <a class="nav__link" href="#">Reservations</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">Tours</a>
@@ -56,45 +56,75 @@
       <a href="#" class="hero__button">Make a Reservation</a>
     </section>
 
-    <section class="weather">
-      <picture class="weather__banner">
-        <source media="(min-width: 1200px)" srcset="images/banner_1400.jpg">
-        <source media="(min-width: 800px)" srcset="images/banner_900.jpg">
-        <img src="images/banner_500.jpg" class="weather__image" alt="Tourists riding motor scooters">
-      </picture>
-      <div class="temperature">
-        <h3 class="temperature__title">Current Weather</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td>Temperature:</td>
-              <td><span id="currentWeatherTemperature">100</span></td>
-            </tr>
-            <tr>
-              <td>Currently:</td>
-              <td><span id="currentWeatherDescription">Sunny</span></td>
-            </tr>
-            <tr>
-              <td>Humidity:</td>
-              <td><span id="currentWeatherHumidity">45%</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="forecast">
-        <h3 class="forecast__title">Forecast</h3>
-        <div class="forecast__wrapper" id="forecastWrapper">
-        </div>
-      </div>
-    </section>
 
     <!-- CONTENT -->
     <main class="main">
-      <section class="main__section main__forecast"></section>
-      <section class="main__section main__rental"></section>
-      <section class="main__section main__rental"></section>
-      <section class="main__section main__rental"></section>
+
+      <section class="section section__rental section__rental--scooter">
+        <div class="wrapper wrapper--scooter">
+          <div class="container">
+            <h3>Scooters</h3>
+            <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section__rental section__rental--jeep">
+        <div class="wrapper wrapper--jeep">
+          <div class="container">
+            <h3>Jeeps</h3>
+            <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section__rental section__rental--atv">
+        <div class="wrapper wrapper--atv">
+          <div class="container">
+            <h3>ATVs</h3>
+            <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section__weather section__weather--temperature">
+        <div class="wrapper wrapper--weather">
+          <div class="container">
+            <h3>Current Weather</h3>
+            <table class="weather__table">
+              <tbody>
+                <tr>
+                  <td>Temperature:</td>
+                  <td><span id="currentWeatherTemperature">100</span></td>
+                </tr>
+                <tr>
+                  <td>Currently:</td>
+                  <td><span id="currentWeatherDescription">Sunny</span></td>
+                </tr>
+                <tr>
+                  <td>Humidity:</td>
+                  <td><span id="currentWeatherHumidity">45%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FORECAST -->
+      <section class="section section__weather section__weather--forecast">
+        <div class="wrapper wrapper--forecast">
+          <div class="container">
+            <h3>3-Day Forecast</h3>
+            <div class="forecast__wrapper" id="forecastWrapper"></div>
+          </div>
+        </div>
+      </section>
+
     </main>
+
+
 
     <!-- FOOTER -->
     <footer class="footer">

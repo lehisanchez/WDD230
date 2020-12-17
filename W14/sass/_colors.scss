@@ -41,6 +41,15 @@ $main-background: palette.$blue-400;
 
 // CURRENT WEATHER SECTION
 // =================================
-$current-weather-section-title: palette.$blue-900;
-$current-weather-section-text: palette.$blue-900;
-$current-weather-section-background: palette.$yellow-200;
+$weather-section-title: white;
+$weather-section-text: palette.$blue-900;
+$weather-temperature-background: palette.$yellow-200;
+$weather-section-forecast-icon-background: palette.$blue-300;
+$weather-temperature-background: palette.$yellow-200;
+$weather-forecast-background: palette.$forest-green-800;
+
+
+// MAIN - RENTAL
+$rental-background-scooter: palette.$orange-800;
+$rental-background-jeep: palette.$blue-800;
+$rental-background-atv: palette.$green-800;

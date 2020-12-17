@@ -65,12 +65,9 @@ function fetchForecast(url) {
 
                     if (day_count != day_limit) {
                         // STORE IMAGE AND TIME VARIABLES
-                        let imagesrc = 'https://openweathermap.org/img/wn/' + jsObject.list[index].weather[0].icon + '.png';
-                        let date = new Date(jsObject.list[index].dt_txt);
-                        let day = date.getDay();
-
-                        console.log(jsObject.list[index].dt_txt)
-                        console.log(date)
+                        let imagesrc = 'https://openweathermap.org/img/wn/' + jsObject.list[index].weather[0].icon + '@2x.png';
+                        var date = new Date(jsObject.list[index].dt_txt.replace(/-/g, '/'));
+                        var day = date.getDay();
 
                         // CREATE SOME ELEMENTS
                         let day_container = document.createElement('div');
@@ -79,6 +76,7 @@ function fetchForecast(url) {
                         let day_temp = document.createElement('span');
 
                         // POPULATE ELEMENTS
+                        day_container.setAttribute('class', 'forecast__box');
                         day_name.innerHTML = DAYS_OF_THE_WEEK[day];
                         day_icon.setAttribute('src', imagesrc);
                         day_icon.setAttribute('alt', 'weather icon');
