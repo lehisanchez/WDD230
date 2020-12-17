@@ -10,12 +10,15 @@ function toggleNavigationVisibility() {
 }
 
 function fetchCurrentWeather() {
-    let cityId = 3530103;
-    getWeatherByCityId(cityId);
+    getWeatherByCityId(3530103);
+}
+
+function fetchCurrentForecast() {
+    getForecastByCityId(3530103);
 }
 
 const API_KEY = "bc2af43a6e48f00068e9169feff4ee8a";
-const DAYS_OF_THE_WEEK = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const DAYS_OF_THE_WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat']
 
 function getWeatherByCityId(id) {
     let url = "https://api.openweathermap.org/data/2.5/weather?units=imperial&appid=" + API_KEY + "&id=" + id;
@@ -49,7 +52,10 @@ function fetchForecast(url) {
         .then((jsObject) => {
 
             // GRAB THE 5-DAY FORECAST CONTAINER
-            var forecast_wrapper = document.getElementById('forecast')
+            var forecast_wrapper = document.getElementById('forecastWrapper')
+
+            var day_limit = 3;
+            var day_count = 0;
 
             // LOOP OVER EVERY FORECAST TIME PERIOD
             for (let index = 0; index < jsObject.list.length; index++) {
@@ -57,32 +63,37 @@ function fetchForecast(url) {
                 // IF THE TIME PERIOD EQUALS 18:00
                 if (jsObject.list[index].dt_txt.substring(11) == "18:00:00") {
 
-                    // STORE IMAGE AND TIME VARIABLES
-                    let imagesrc = 'https://openweathermap.org/img/wn/' + jsObject.list[index].weather[0].icon + '@2x.png';
-                    let date = new Date(jsObject.list[index].dt_txt);
-                    let day = date.getDay();
+                    if (day_count != day_limit) {
+                        // STORE IMAGE AND TIME VARIABLES
+                        let imagesrc = 'https://openweathermap.org/img/wn/' + jsObject.list[index].weather[0].icon + '.png';
+                        let date = new Date(jsObject.list[index].dt_txt);
+                        let day = date.getDay();
 
-                    // CREATE SOME ELEMENTS
-                    let day_container = document.createElement('div');
-                    let day_name = document.createElement('span');
-                    let day_icon = document.createElement('img');
-                    let day_temp = document.createElement('span');
+                        console.log(jsObject.list[index].dt_txt)
+                        console.log(date)
 
-                    // POPULATE ELEMENTS
-                    day_name.innerHTML = DAYS_OF_THE_WEEK[day];
-                    day_icon.setAttribute('src', imagesrc);
-                    day_icon.setAttribute('alt', 'weather icon');
-                    day_temp.innerHTML = Math.round(jsObject.list[index].main.temp) + '&deg; F';
+                        // CREATE SOME ELEMENTS
+                        let day_container = document.createElement('div');
+                        let day_name = document.createElement('span');
+                        let day_icon = document.createElement('img');
+                        let day_temp = document.createElement('span');
 
-                    // START PACKING EVERYTHING
-                    day_container.appendChild(day_name)
-                    day_container.appendChild(day_icon)
-                    day_container.appendChild(day_temp)
-                    forecast_wrapper.appendChild(day_container)
+                        // POPULATE ELEMENTS
+                        day_name.innerHTML = DAYS_OF_THE_WEEK[day];
+                        day_icon.setAttribute('src', imagesrc);
+                        day_icon.setAttribute('alt', 'weather icon');
+                        day_temp.innerHTML = Math.round(jsObject.list[index].main.temp) + '&deg; F';
+
+                        // START PACKING EVERYTHING
+                        day_container.appendChild(day_name)
+                        day_container.appendChild(day_icon)
+                        day_container.appendChild(day_temp)
+                        forecast_wrapper.appendChild(day_container)
+
+                        day_count++
+                    }
 
                 }
-
             }
-
         });
 }

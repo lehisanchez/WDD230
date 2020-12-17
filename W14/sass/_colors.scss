@@ -1,13 +1,16 @@
 @use 'palette';
 
 // BODY
+// =================================
 $body-background: palette.$blue-900;
 
 // HEADER
+// =================================
 $header-text: white;
 $header-background: palette.$blue-900;
 
 // NAVIGATION
+// =================================
 $navigation-text: palette.$orange-400;
 $navigation-background: palette.$blue-800;
 
@@ -18,6 +21,7 @@ $nav-active-text: palette.$yellow-400;
 $nav-active-background: darken($navigation-background, 5%);
 
 // HERO
+// =================================
 $hero-background: palette.$blue-900;
 
 $hero-title: palette.$green-400;
@@ -32,9 +36,11 @@ $hero-button-border-hover: palette.$yellow-700;
 
 
 // MAIN
+// =================================
 $main-background: palette.$blue-400;
 
 // CURRENT WEATHER SECTION
+// =================================
 $current-weather-section-title: palette.$blue-900;
 $current-weather-section-text: palette.$blue-900;
 $current-weather-section-background: palette.$yellow-200;

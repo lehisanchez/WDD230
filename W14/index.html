@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Scooters for tourists">
+    <meta name="description" content="Motor scooter rental company in Cozumel, Mexico.">
     <title>Scoots | Home</title>
     <!-- <link rel="stylesheet" href="css/small.css"> -->
     <!-- <link rel="stylesheet" href="css/medium.css"> -->
@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        fetchCurrentWeather()
+        fetchCurrentWeather();
+        fetchCurrentForecast();
       });
 
     </script>
@@ -50,18 +51,19 @@
     <!-- HERO -->
     <section class="hero">
       <h2 class="hero__title">Scoots</h2>
-      <span class="hero__subtitle">Motor Scooter Rentals</span>
+      <span class="hero__subtitle">Scooters, Jeeps, and ATVs</span>
+      <p class="hero__description">We are a motor scooter rental company in Cozumel Mexico. Vehicles include Scooters, Jeeps, and side-by-side ATVs. With 2 locations on the island, we've got you covered as you spend your vacation with us!</p>
       <a href="#" class="hero__button">Make a Reservation</a>
     </section>
 
-    <section class="current_weather">
-      <picture class="current_weather__banner">
+    <section class="weather">
+      <picture class="weather__banner">
         <source media="(min-width: 1200px)" srcset="images/banner_1400.jpg">
         <source media="(min-width: 800px)" srcset="images/banner_900.jpg">
-        <img src="images/banner_500.jpg" class="current_weather__image" alt="Tourists riding motor scooters">
+        <img src="images/banner_500.jpg" class="weather__image" alt="Tourists riding motor scooters">
       </picture>
-      <div class="current_weather__temperature_table">
-        <h3 class="current_weather__title">Current Weather</h3>
+      <div class="temperature">
+        <h3 class="temperature__title">Current Weather</h3>
         <table>
           <tbody>
             <tr>
@@ -79,9 +81,12 @@
           </tbody>
         </table>
       </div>
+      <div class="forecast">
+        <h3 class="forecast__title">Forecast</h3>
+        <div class="forecast__wrapper" id="forecastWrapper">
+        </div>
+      </div>
     </section>
-
-
 
     <!-- CONTENT -->
     <main class="main">
