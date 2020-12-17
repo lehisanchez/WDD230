@@ -1,8 +1,10 @@
 $container-width: 800px;
+$header-height: 80px;
 
 @media (min-width: $container-width) {
 
   .header {
+    height: $header-height;
 
     &__wrapper {
       max-width: $container-width;
@@ -58,7 +60,9 @@ $container-width: 800px;
   }
 
   .hero {
+    min-height: 250px;
     height: 50vh;
+    padding: 50px 0;
   }
 
   .main {

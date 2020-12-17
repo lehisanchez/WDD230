@@ -138,7 +138,7 @@ h6 {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   // margin-top: -80px;
   display: flex;
   flex-direction: column;
@@ -341,7 +341,8 @@ h6 {
 }
 
 .footer {
-  height: 100vh;
+  padding: 50px 0;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -378,3 +379,4 @@ h6 {
 }
 
 @import 'medium';
+@import 'large';

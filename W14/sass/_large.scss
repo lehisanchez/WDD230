@@ -1,0 +1,34 @@
+$container-width: 1200px;
+
+@media (min-width: $container-width) {
+  .header {
+    &__wrapper {
+      max-width: $container-width;
+    }
+
+  }
+
+  .nav {
+    &__wrapper {
+      max-width: $container-width;
+    }
+  }
+
+  .main {
+    .section {
+
+      .wrapper--scooter,
+      .wrapper--jeep,
+      .wrapper--atv {
+
+        .container {
+          max-width: $container-width - 50;
+        }
+      }
+    }
+  }
+
+  .footer {
+    max-width: $container-width - 200px;
+  }
+}

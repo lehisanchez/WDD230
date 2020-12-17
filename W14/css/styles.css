@@ -243,7 +243,7 @@ h6 {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -403,7 +403,8 @@ h6 {
 }
 
 .footer {
-  height: 100vh;
+  padding: 50px 0;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -435,6 +436,9 @@ h6 {
 }
 
 @media (min-width: 800px) {
+  .header {
+    height: 80px;
+  }
   .header__wrapper {
     max-width: 800px;
     margin: 0 auto;
@@ -480,7 +484,9 @@ h6 {
   }
 
   .hero {
+    min-height: 250px;
     height: 50vh;
+    padding: 50px 0;
   }
 
   .main .section {
@@ -561,6 +567,25 @@ h6 {
     align-items: flex-start;
     align-content: flex-start;
     justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .header__wrapper {
+    max-width: 1200px;
+  }
+
+  .nav__wrapper {
+    max-width: 1200px;
+  }
+
+  .main .section .wrapper--scooter .container,
+.main .section .wrapper--jeep .container,
+.main .section .wrapper--atv .container {
+    max-width: 1150px;
+  }
+
+  .footer {
+    max-width: 1000px;
   }
 }
 
