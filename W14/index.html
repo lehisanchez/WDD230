@@ -14,6 +14,7 @@
       document.addEventListener('DOMContentLoaded', () => {
         fetchCurrentWeather();
         fetchCurrentForecast();
+        updateFooter();
       });
 
     </script>
@@ -32,20 +33,22 @@
 
     <!-- NAVIGATION -->
     <nav class="nav nav--hidden" id="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Rentals</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Reservations</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Tours</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Contact</a>
-        </li>
-      </ul>
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">Rentals</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Tours</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Reservations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- HERO -->
@@ -57,36 +60,55 @@
     </section>
 
 
-    <!-- CONTENT -->
+    <!-- MAIN CONTENT -->
     <main class="main">
 
+      <!-- RENTAL: SCOOTERS -->
       <section class="section section__rental section__rental--scooter">
         <div class="wrapper wrapper--scooter">
           <div class="container">
-            <h3>Scooters</h3>
-            <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+            <article>
+              <h3>Scooters</h3>
+              <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+            </article>
+            <picture class="section__picture">
+              <img src="images/scooters_500.jpg" alt="People on scooters">
+            </picture>
           </div>
         </div>
       </section>
 
-      <section class="section section__rental section__rental--jeep">
-        <div class="wrapper wrapper--jeep">
-          <div class="container">
-            <h3>Jeeps</h3>
-            <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
-          </div>
-        </div>
-      </section>
-
+      <!-- RENTAL: ATV -->
       <section class="section section__rental section__rental--atv">
         <div class="wrapper wrapper--atv">
           <div class="container">
-            <h3>ATVs</h3>
-            <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+            <article>
+              <h3>ATVs</h3>
+              <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+            </article>
+            <picture class="section__picture">
+              <img src="images/atv_500.jpg" alt="People on scooters">
+            </picture>
           </div>
         </div>
       </section>
 
+      <!-- RENTAL: JEEP -->
+      <section class="section section__rental section__rental--jeep">
+        <div class="wrapper wrapper--jeep">
+          <div class="container">
+            <article>
+              <h3>Jeeps</h3>
+              <p class="section__summary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus temporibus natus commodi corporis suscipit, itaque odio quidem ipsa adipisci quas nemo tempora repellendus corrupti facilis. Molestiae blanditiis voluptas incidunt sed.</p>
+            </article>
+            <picture class="section__picture">
+              <img src="images/jeep_500.jpg" alt="People on scooters">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- WEATHER -->
       <section class="section section__weather section__weather--temperature">
         <div class="wrapper wrapper--weather">
           <div class="container">
@@ -108,7 +130,6 @@
               </tbody>
             </table>
           </div>
-
         </div>
       </section>
 
@@ -124,11 +145,53 @@
 
     </main>
 
-
-
     <!-- FOOTER -->
     <footer class="footer">
 
+      <div class="footer__wrapper">
+        <h3>Links</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Rentals</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Reservations</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Tours</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Resources</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__wrapper">
+        <h3>Social</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Facebook</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Twitter</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__wrapper">
+        <h3>Copyright</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="index.html">&copy; <span id="copyright-year"></span> Scoots Motor Company</a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
 

@@ -7,7 +7,7 @@ $body-background: palette.$blue-900;
 // HEADER
 // =================================
 $header-text: white;
-$header-background: palette.$blue-900;
+$header-background: palette.$blue-800;
 
 // NAVIGATION
 // =================================
@@ -50,6 +50,13 @@ $weather-forecast-background: palette.$forest-green-800;
 
 
 // MAIN - RENTAL
+// =================================
 $rental-background-scooter: palette.$orange-800;
 $rental-background-jeep: palette.$blue-800;
 $rental-background-atv: palette.$green-800;
+
+
+// FOOTER
+// =================================
+$footer-link-text: palette.$orange-500;
+$footer-link-text-hover: palette.$yellow-400;
