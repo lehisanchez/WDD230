@@ -26,6 +26,13 @@ $container-width: 1200px;
         }
       }
     }
+
+    .rentals {
+      table {
+        max-width: $container-width;
+        font-size: 1.2em;
+      }
+    }
   }
 
   .footer {

@@ -170,6 +170,12 @@ $header-height: 80px;
       }
     }
 
+    .rentals {
+      table {
+        max-width: $container-width;
+        font-size: 1em;
+      }
+    }
   }
 
   .footer {

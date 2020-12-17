@@ -251,6 +251,12 @@ h6 {
   padding: 0 50px;
   background-color: #203746;
 }
+.hero--subpage {
+  height: 200px;
+}
+.hero--subpage .hero__title {
+  font-size: 3em;
+}
 .hero__title {
   padding: 0;
   line-height: 1em;
@@ -381,7 +387,42 @@ h6 {
 .main .section tr > td:first-child {
   text-align: right;
 }
-
+.main .rentals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: white;
+}
+.main .rentals h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.main .rentals ul {
+  margin-bottom: 30px;
+  list-style: disc;
+}
+.main .rentals ul li {
+  line-height: 1.7em;
+}
+.main .rentals table,
+.main .rentals th,
+.main .rentals td {
+  padding: 10px 0;
+  border: 1px solid #555;
+}
+.main .rentals table {
+  width: 100%;
+  font-size: 0.7em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2em;
+  border-collapse: collapse;
+}
+.main .rentals table th {
+  font-weight: 400;
+}
 #forecastWrapper {
   display: flex;
   flex-direction: row;
@@ -563,6 +604,10 @@ h6 {
   .main .section__weather--forecast {
     background-image: none;
   }
+  .main .rentals table {
+    max-width: 800px;
+    font-size: 1em;
+  }
 
   .footer {
     max-width: 750px;
@@ -588,6 +633,10 @@ h6 {
 .main .section .wrapper--jeep .container,
 .main .section .wrapper--atv .container {
     max-width: 1150px;
+  }
+  .main .rentals table {
+    max-width: 1200px;
+    font-size: 1.2em;
   }
 
   .footer {

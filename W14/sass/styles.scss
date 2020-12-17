@@ -146,6 +146,14 @@ h6 {
   padding: 0 50px;
   background-color: colors.$hero-background;
 
+  &--subpage {
+    height: 200px;
+
+    .hero__title {
+      font-size: 3em;
+    }
+  }
+
   &__title {
     padding: 0;
     line-height: 1em;
@@ -314,6 +322,67 @@ h6 {
 
 
 
+  }
+
+  .rentals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    color: white;
+    // text-align: center;
+    // background-color: white;
+
+    h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-bottom: 30px;
+      list-style: disc;
+
+      li {
+        line-height: 1.7em;
+      }
+    }
+
+    table,
+    th,
+    td {
+      padding: 10px 0;
+      border: 1px solid #555;
+    }
+
+    table {
+      width: 100%;
+      font-size: .7em;
+      font-weight: 300;
+      text-align: center;
+      line-height: 1.2em;
+      border-collapse: collapse;
+
+      th {
+        font-weight: 400;
+      }
+    }
+
+    &:nth-child(1) {
+      // background-color: colors.$rentals-section-background-1;
+    }
+
+    &:nth-child(2) {
+      // background-color: colors.$rentals-section-background-2;
+    }
+
+    &:nth-child(3) {
+      // background-color: colors.$rentals-section-background-3;
+    }
+
+    &:nth-child(4) {
+      // background-color: colors.$rentals-section-background-4;
+    }
   }
 }
 
