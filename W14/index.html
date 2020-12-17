@@ -10,9 +10,15 @@
     <!-- <link rel="stylesheet" href="css/medium.css"> -->
     <!-- <link rel="stylesheet" href="css/large.css"> -->
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        fetchCurrentWeather()
+      });
+
+    </script>
   </head>
 
-  <body>
+  <body onload="">
 
     <!-- HEADER -->
     <header class="header">
@@ -48,12 +54,41 @@
       <a href="#" class="hero__button">Make a Reservation</a>
     </section>
 
+    <section class="current_weather">
+      <picture class="current_weather__banner">
+        <source media="(min-width: 1200px)" srcset="images/banner_1400.jpg">
+        <source media="(min-width: 800px)" srcset="images/banner_900.jpg">
+        <img src="images/banner_500.jpg" class="current_weather__image" alt="Tourists riding motor scooters">
+      </picture>
+      <div class="current_weather__temperature_table">
+        <h3 class="current_weather__title">Current Weather</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Temperature:</td>
+              <td><span id="currentWeatherTemperature">100</span></td>
+            </tr>
+            <tr>
+              <td>Currently:</td>
+              <td><span id="currentWeatherDescription">Sunny</span></td>
+            </tr>
+            <tr>
+              <td>Humidity:</td>
+              <td><span id="currentWeatherHumidity">45%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+
     <!-- CONTENT -->
     <main class="main">
+      <section class="main__section main__forecast"></section>
       <section class="main__section main__rental"></section>
       <section class="main__section main__rental"></section>
-      <section class="main__section main__call2action"></section>
-      <section class="main__section main__forcast"></section>
+      <section class="main__section main__rental"></section>
     </main>
 
     <!-- FOOTER -->
@@ -72,6 +107,7 @@
 
     </script>
     <script src="js/scripts.js" defer></script>
+
   </body>
 
 </html>

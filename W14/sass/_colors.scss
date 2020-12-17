@@ -1,5 +1,8 @@
 @use 'palette';
 
+// BODY
+$body-background: palette.$blue-900;
+
 // HEADER
 $header-text: white;
 $header-background: palette.$blue-900;
@@ -26,3 +29,12 @@ $hero-button-background: palette.$orange-500;
 $hero-button-background-hover: palette.$yellow-400;
 $hero-button-border: palette.$orange-600;
 $hero-button-border-hover: palette.$yellow-700;
+
+
+// MAIN
+$main-background: palette.$blue-400;
+
+// CURRENT WEATHER SECTION
+$current-weather-section-title: palette.$blue-900;
+$current-weather-section-text: palette.$blue-900;
+$current-weather-section-background: palette.$yellow-200;
