@@ -604,6 +604,43 @@ h6 {
   border-bottom: 5px solid #c99403;
   background-color: #fcc01d;
 }
+.main .tours {
+  padding: 50px;
+  color: white;
+}
+.main .tours__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.main .tours__heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.main .tours__paragraph {
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.7em;
+  text-indent: 1em;
+}
+.main .tours__picture {
+  margin-top: 20px;
+}
+.main .tours:nth-child(1) {
+  color: black;
+  background-color: #fdd568;
+}
+.main .tours:nth-child(2) {
+  background-color: #73a2bf;
+}
+.main .tours:nth-child(3) {
+  background-color: #739a4c;
+}
+.main .tours:nth-child(4) {
+  background-color: #73a2bf;
+}
 
 #forecastWrapper {
   display: flex;
@@ -798,6 +835,30 @@ h6 {
   }
   .main .form input {
     width: unset;
+  }
+  .main .tours__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .main .tours__paragraph {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .main .tours__picture {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+  .main .tours:nth-child(even) .tours__wrapper {
+    flex-direction: row-reverse;
+  }
+  .main .tours:nth-child(even) .tours__wrapper div {
+    margin-left: 20px;
+  }
+  .main .tours:nth-child(even) .tours__picture {
+    margin-left: 0;
+    margin-top: 0px;
   }
 
   .footer {

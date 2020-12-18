@@ -608,7 +608,51 @@ h6 {
     }
   }
 
+  .tours {
+    padding: 50px;
+    color: white;
 
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    &__heading {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    &__paragraph {
+      margin-bottom: 10px;
+      text-align: left;
+      line-height: 1.7em;
+      text-indent: 1em;
+    }
+
+    &__picture {
+      margin-top: 20px;
+    }
+
+    &:nth-child(1) {
+      color: black;
+      background-color: colors.$tours-background-1;
+    }
+
+    &:nth-child(2) {
+      background-color: colors.$tours-background-2;
+    }
+
+    &:nth-child(3) {
+      background-color: colors.$tours-background-3;
+    }
+
+    &:nth-child(4) {
+      background-color: colors.$tours-background-4;
+    }
+  }
 
 }
 

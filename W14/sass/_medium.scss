@@ -188,7 +188,47 @@ $header-height: 80px;
         width: unset;
       }
     }
+
+    .tours {
+
+      &__wrapper {
+        max-width: $container-width;
+        margin: 0 auto;
+        flex-direction: row;
+      }
+
+
+      &__paragraph {
+        max-width: $container-width;
+        margin: 0 auto;
+      }
+
+      &__picture {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 0px;
+      }
+
+      &:nth-child(even) {
+
+        .tours__wrapper {
+          flex-direction: row-reverse;
+
+          div {
+            margin-left: 20px;
+          }
+        }
+
+        .tours__picture {
+          margin-left: 0;
+          margin-top: 0px;
+        }
+      }
+
+
+    }
   }
+
 
   .footer {
     max-width: $container-width - 50px;
