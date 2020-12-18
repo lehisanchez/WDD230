@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/styles.css">
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         updateFooter();
@@ -23,8 +22,10 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__wrapper">
-        <h1 class="header__title">Scoots</h1>
-        <img src="images/logo_white.png" class="header__logo" alt="Scoots Logo">
+        <div>
+          <img src="images/logo_white.png" class="header__logo" alt="Scoots Logo">
+          <h1 class="header__title">Scoots</h1>
+        </div>
         <div class="header__hamburger" id="navigationToggleButton" onclick="toggleNavigationVisibility()">&#9776;</div>
       </div>
     </header>
@@ -62,27 +63,6 @@
     <main class="main">
 
       <section class="maps">
-
-        <h3 class="maps__heading">Send us a message!</h3>
-
-        <form action="confirmation.html" class="maps__form">
-          <label class="form__label">Full Name
-            <input type="text" name="fullname" pattern="[A-Za-z\s]*" placeholder="Full Name" required>
-          </label>
-          <label class="form__label">Email
-            <input type="email" name="email" placeholder="Email" required>
-          </label>
-          <label class="form__label">Message
-            <textarea class="form__textarea" name="comments"></textarea>
-          </label>
-          <fieldset class="form__fieldset">
-            <input class="form__button" type="submit" value="Send Message">
-          </fieldset>
-        </form>
-
-      </section>
-
-      <section class="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.430981693592!2d-86.9736591452813!3d20.477961154551068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDI4JzI4LjUiTiA4NsKwNTgnMzAuNyJX!5e0!3m2!1sen!2sus!4v1608260858310!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="maps__address">
           <h3>Centro de Cozumel Location</h3>
@@ -98,6 +78,27 @@
           <p>123 Avenue</p>
           <p>San Miguel de Cozumel</p>
         </div>
+      </section>
+
+      <section class="maps">
+
+        <h3 class="maps__heading">Send us a message!</h3>
+
+        <form action="confirmation-mail.html" class="maps__form">
+          <label class="form__label">Full Name
+            <input type="text" name="fullname" pattern="[A-Za-z\s]*" placeholder="Full Name" required>
+          </label>
+          <label class="form__label">Email
+            <input type="email" name="email" placeholder="Email" required>
+          </label>
+          <label class="form__label">Message
+            <textarea class="form__textarea" name="comments"></textarea>
+          </label>
+          <fieldset class="form__fieldset">
+            <input class="form__button" type="submit" value="Send Message">
+          </fieldset>
+        </form>
+
       </section>
 
     </main>

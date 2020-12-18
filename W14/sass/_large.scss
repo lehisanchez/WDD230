@@ -39,6 +39,24 @@ $container-width: 1200px;
       max-width: $container-width;
     }
 
+    .tours {
+      padding: 100px 0;
+
+      &__wrapper {
+        max-width: $container-width;
+      }
+
+      &__paragraph {
+        max-width: $container-width;
+      }
+
+    }
+
+    .maps {
+      &__form {
+        min-width: $container-width;
+      }
+    }
 
   }
 

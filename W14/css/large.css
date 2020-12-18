@@ -1,0 +1,40 @@
+@media (min-width: 1200px) {
+  .header__wrapper {
+    max-width: 1200px;
+  }
+
+  .nav__wrapper {
+    max-width: 1200px;
+  }
+
+  .main .section .wrapper--scooter .container,
+.main .section .wrapper--jeep .container,
+.main .section .wrapper--atv .container {
+    max-width: 1150px;
+  }
+  .main .rentals table {
+    max-width: 1200px;
+    font-size: 1.2em;
+  }
+  .main .form {
+    max-width: 1200px;
+  }
+  .main .tours {
+    padding: 100px 0;
+  }
+  .main .tours__wrapper {
+    max-width: 1200px;
+  }
+  .main .tours__paragraph {
+    max-width: 1200px;
+  }
+  .main .maps__form {
+    min-width: 1200px;
+  }
+
+  .footer {
+    max-width: 1000px;
+  }
+}
+
+/*# sourceMappingURL=large.css.map */

@@ -12,16 +12,16 @@ $header-height: 80px;
       display: flex;
       align-items: center;
       justify-content: center;
+
     }
 
     &__title {
       order: 2;
       display: block;
-      margin-left: 10px;
     }
 
     &__hamburger {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -226,6 +226,12 @@ $header-height: 80px;
       }
 
 
+    }
+
+    .maps {
+      &__form {
+        min-width: $container-width;
+      }
     }
   }
 

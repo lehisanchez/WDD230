@@ -44,13 +44,21 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
-    display: none;
-    font-size: 1.7em;
-    font-weight: 900;
+    font-size: 1.5em;
+    font-weight: 700;
     vertical-align: middle;
+    line-height: 1.5em;
+    margin-left: 5px;
   }
 
   &__logo {
@@ -59,7 +67,6 @@ h6 {
   }
 
   &__hamburger {
-    // color: colors.$secondary;
     font-size: 2em;
     cursor: pointer;
 

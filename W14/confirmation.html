@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/styles.css">
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         updateFooter();
@@ -23,8 +22,10 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__wrapper">
-        <h1 class="header__title">Scoots</h1>
-        <img src="images/logo_white.png" class="header__logo" alt="Scoots Logo">
+        <div>
+          <img src="images/logo_white.png" class="header__logo" alt="Scoots Logo">
+          <h1 class="header__title">Scoots</h1>
+        </div>
         <div class="header__hamburger" id="navigationToggleButton" onclick="toggleNavigationVisibility()">&#9776;</div>
       </div>
     </header>
@@ -43,7 +44,7 @@
             <a class="nav__link" href="tours.html">Tours</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--active" href="reservations.html">Reservations</a>
+            <a class="nav__link" href="reservations.html">Reservations</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="contact.html">Contact</a>
