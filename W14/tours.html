@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        fetchCurrentWeather();
-        fetchCurrentForecast();
         updateFooter();
       });
 
@@ -63,7 +61,23 @@
     <!-- MAIN CONTENT -->
     <main class="main">
 
-
+      <h2>Tours</h2>
+      <div class="section">
+        <h3><a href="https://www.cozumelparks.com/en/cozumel-museum/">Museo de la Isla de Cozumel</a></h3>
+        <p><img src="images/placeholder.jpg" data-src="images/mayanartifact.jpg" class="tourImage" alt="Mayan Artifact">Originally one of the first hotels on the island, the Island of Cozumel Museum dates back to the 1930's. Come learn about Cozumel's history, geography, ecosystems, customs and culture with 11 exciting exhibits. This is a must see for a first time visitor to become familiar with the islands history, people and culture. You can tour the museum in about 2 hours and still have plenty of time to explore the island. For more information click the link above.</p>
+      </div>
+      <div class="section">
+        <h3><a href="https://www.cozumelparks.com/en/san_gervasio/">San Gervasio</a></h3>
+        <p><img src="images/placeholder.jpg" data-src="images/sangervasio.jpg" class="tourImage" alt="San Gervasio Mayan Ruins">San Gervasio is a Mayan archaeological site on the northern part of the island of Cozumel. The largest collection of ruins dating back to 100 BC are found here. These ruins were once a place of pilgrimage for Mayan women to worship the goddess Ix Chel; a goddess of fertility, childbirth and medicine. Entrance to the park is $10.75 per person. You can hire guided tours for an additional price. For more information click the link above.</p>
+      </div>
+      <div class="section">
+        <h3 class="tourH3">Lighthouses</h3>
+        <p><img src="images/placeholder.jpg" data-src="images/lighthouse.jpg" class="tourImage" alt="Lighthouse in Quintana Roo, Cozumel, Mexico">Cozumel has several lighthouses along the coasts. Among them are Punta Ealetita Lighthouse and Punta Langosta, both located in San Miguel de Cozumel. On the southern coast of Cozumel is Celarain Lighthouse. On the northernmost tip of the island is Maybe Lighthosue only accessible through jungle terrain on ATVs. Most of the lighthouses are open to the public for climbs daily and offer scenic views across the caribbean.</p>
+      </div>
+      <div class="section">
+        <h3 class="tourH3">Beaches</h3>
+        <p><img src="images/placeholder.jpg" data-src="images/beach.jpg" class="tourImage" alt="Beach in Cozumel, Mexico">Cozumel boasts more than a dozen public beaches. Whether you want to surf, snorkel, swim or sunbathe; your options are not limited. There are several beaches within walking distance from the cruise port. Along the south-western coastline is Palancar Beach offering free ammenities to the public. Punta Sur Beach is the southern tip of Cozumel and boasts the largest ecological park with many reefs and lagoons; perfect for the avid snorkler. Along the eastern coast surf enthusiasts can rent equiptment at several beaches including Chen Rio Beach and Ixpalbarco Beach. There are several private beaches offering a little more privacy with admission along the eastern coast. For those seeking more adventure and activity there are many clubs also along the eastern coast offering water activities for a daily admission.</p>
+      </div>
 
     </main>
 
@@ -73,19 +87,19 @@
         <h3>Links</h3>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#">Rentals</a>
+            <a class="footer__link" href="rentals.html">Rentals</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Reservations</a>
+            <a class="footer__link" href="reservations.html">Reservations</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Tours</a>
+            <a class="footer__link" href="tours.html">Tours</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Contact</a>
+            <a class="footer__link" href="contact.html">Contact</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Resources</a>
+            <a class="footer__link" href="resources.html">Resources</a>
           </li>
         </ul>
       </div>
@@ -126,6 +140,7 @@
       });
 
     </script>
+    <script src="js/lazyload.js"></script>
     <script src="js/scripts.js" defer></script>
 
   </body>

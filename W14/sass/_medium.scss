@@ -176,10 +176,23 @@ $header-height: 80px;
         font-size: 1em;
       }
     }
+
+    .form {
+      max-width: $container-width;
+
+      &__label {
+        width: unset;
+      }
+
+      input {
+        width: unset;
+      }
+    }
   }
 
   .footer {
     max-width: $container-width - 50px;
+    min-height: unset;
     height: auto;
     margin: 0 auto;
     padding: 100px 0;

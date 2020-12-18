@@ -103,3 +103,92 @@ function fetchForecast(url) {
       }
     });
 }
+
+
+function fetchPricing() {
+  const requestURL = 'data/prices.json';
+
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      const rentals = jsonObject['rentals'];
+
+      rentals.forEach(rental => {
+        let tr = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        let td6 = document.createElement('td');
+
+        td1.innerHTML = rental.name;
+        td2.innerHTML = rental.max;
+        td3.innerHTML = `$${rental.resHalf}`;
+        td4.innerHTML = `$${rental.resFull}`;
+        td5.innerHTML = `$${rental.walkHalf}`;
+        td6.innerHTML = `$${rental.walkFull}`;
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+        tr.appendChild(td6);
+
+        document.getElementById('pricingTable').appendChild(tr);
+      });
+    });
+}
+
+function fetchImages() {
+
+  const requestURL = 'data/prices.json';
+
+  fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      const rentals = jsonObject['rentals'];
+
+      rentals.forEach(rental => {
+
+        let div1 = document.createElement('div');
+        let image = document.createElement('img');
+        let sect = document.createElement('section');
+        let h3 = document.createElement('h3');
+        let p1 = document.createElement('p');
+        let p2 = document.createElement('p');
+        let p3 = document.createElement('p');
+        let p4 = document.createElement('p');
+        let p5 = document.createElement('p');
+
+        h3.innerHTML = rental.name;
+        p1.innerHTML = `Max Persons: ${rental.max}`;
+        p2.innerHTML = `Half Day w/ Reservation: $${rental.resHalf}`;
+        p3.innerHTML = `Full Day w/ Reservation: $${rental.resFull}`;
+        p4.innerHTML = `Half Day Walk-In: $${rental.walkHalf}`;
+        p5.innerHTML = `Full Day Walk-In: $${rental.walkFull}`;
+        image.setAttribute('src', rental.photo);
+        image.setAttribute('alt', rental.name);
+        image.setAttribute('class', "rentalPics");
+        sect.setAttribute('class', "jsonSection");
+        div1.setAttribute('class', "rentalDivs");
+        h3.setAttribute('class', "rentalH3");
+
+        div1.appendChild(image);
+        div1.appendChild(sect);
+        sect.appendChild(h3);
+        sect.appendChild(p1);
+        sect.appendChild(p2);
+        sect.appendChild(p3);
+        sect.appendChild(p4);
+        sect.appendChild(p5);
+
+        document.getElementById('rentalImages').appendChild(div1);
+      });
+    });
+}

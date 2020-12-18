@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        fetchCurrentWeather();
-        fetchCurrentForecast();
         updateFooter();
       });
 
@@ -63,7 +61,113 @@
     <!-- MAIN CONTENT -->
     <main class="main">
 
+      <section class="section section__form">
 
+        <h3>Reservation Form</h3>
+
+        <form method="get" action="confirmation.html" class="form">
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Contact Information</legend>
+            <label class="form__label">Full Name* <input type="text" name="fullname" pattern="[A-Za-z\s]*" placeholder="Full Name" required></label>
+            <label class="form__label">Email* <input type="email" name="email" placeholder="yourname@email.com" required></label>
+            <label class="form__label">Phone* <input type="tel" name="phone" placeholder="555-555-5555" required></label>
+            <label class="form__label">State (if applicable) <input type="text" name="country" pattern="[A-Z a-z]{3,}"></label>
+            <label class="form__label">Country <input type="text" name="country" pattern="[A-Z a-z]{3,}"></label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Rental Request</legend>
+            <label class="form__label">Start Date <input type="date" name="startDate"></label>
+            <label class="form__label">End Date <input type="date" name="endDate"></label>
+
+            <label class="form__label" id="timeStart">Pick Up <input list="startTime" name="startTimeList"></label>
+            <datalist id="startTime">
+              <option>7:00 AM</option>
+              <option>8:00 AM</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 AM</option>
+              <option>1:00 PM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+            </datalist>
+
+            <label class="form__label" id="timeEnd">Drop Off <input list="endTime" name="endTimeList"></label>
+            <datalist id="endTime">
+              <option>7:00 AM</option>
+              <option>8:00 AM</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 AM</option>
+              <option>1:00 PM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+            </datalist>
+
+            <div class="form__radio_group">
+              <span class="form__radio_title">Time Frame: </span>
+              <label class="form__radio_label"><input class="form__radio" type="radio" name="timeframe" value="half">Half-Day</label>
+              <label class="form__radio_label"><input class="form__radio" type="radio" name="timeframe" value="full">Full-Day</label>
+            </div>
+
+            <div class="form__radio_group form__radio_group--vertical">
+              <span class="form__radio_title">Rental Type:</span>
+              <label class="form__radio_label"><input type="radio" name="rentalType" value="hondaMetroScooter">Honda Metro Scooter</label>
+              <label class="form__radio_label"><input type="radio" name="rentalType" value="hondaDioScooter">Honda Dio Scooter</label>
+              <label class="form__radio_label"><input type="radio" name="rentalType" value="hondaPCX">Honda PCX 150 Scooter</label>
+              <label class="form__radio_label"><input type="radio" name="rentalType" value="hondaPioneer">Honda Pioneer ATV</label>
+              <label class="form__radio_label"><input type="radio" name="rentalType" value="jeep2door">Jeep Wrangler - 2 Door</label>
+              <label class="form__radio_label"><input type="radio" name="rentalType" value="jeep4door">Jeep Wrangler - 4 Door</label>
+            </div>
+
+            <label class="form__label">Cruise Line (if applicable)
+              <select name="cruise">
+                <option value="" disabled selected>Please Select</option>
+                <option value="cruise">Carnival Cruises</option>
+                <option value="cruise">Celebrity Cruises</option>
+                <option value="cruise">Crystal Cruises</option>
+                <option value="cruise">Disney Cruises</option>
+                <option value="cruise">Holland America Cruises</option>
+                <option value="cruise">Norwegian Cruises</option>
+                <option value="cruise">Princess Cruises</option>
+                <option value="cruise">Regent Seven Seas Cruises</option>
+                <option value="cruise">Royal Caribbean Cruises</option>
+              </select>
+            </label>
+
+            <div class="form__radio_group">
+              <span class="form__radio_title">Drop-off Request:</span>
+              <label class="form__radio_label"><input type="radio" name="dropOff" value="Yes">Yes</label>
+              <label class="form__radio_label"><input type="radio" name="dropOff" value="No">No</label>
+            </div>
+
+            <label class="form__label">Drop Off Location (if applicable) <input type="text" name="location" pattern="[A-Z a-z 0-9 , ]{5,}"></label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Additional Information</legend>
+            <label class="form__textarea_label">Enter Comments Here:
+              <textarea class="form__textarea" name="comments"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <input class="form__button" type="submit" value="Submit Request">
+          </fieldset>
+        </form>
+
+      </section>
 
     </main>
 
@@ -73,19 +177,19 @@
         <h3>Links</h3>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#">Rentals</a>
+            <a class="footer__link" href="rentals.html">Rentals</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Reservations</a>
+            <a class="footer__link" href="reservations.html">Reservations</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Tours</a>
+            <a class="footer__link" href="tours.html">Tours</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Contact</a>
+            <a class="footer__link" href="contact.html">Contact</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Resources</a>
+            <a class="footer__link" href="resources.html">Resources</a>
           </li>
         </ul>
       </div>

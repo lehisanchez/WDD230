@@ -1,3 +1,57 @@
 {
-  "models": [{}]
+  "rentals": [{
+      "name": "Honda Metro Scooter",
+      "max": 1,
+      "resHalf": 20,
+      "resFull": 30,
+      "walkHalf": 25,
+      "walkFull": 35,
+      "photo": "../images/Honda_Metro_Scooter.jpg"
+    },
+    {
+      "name": "Honda Dio Scooter",
+      "max": 2,
+      "resHalf": 30,
+      "resFull": 40,
+      "walkHalf": 35,
+      "walkFull": 45,
+      "photo": "images/Honda_Dio_Scooter.jpg"
+    },
+    {
+      "name": "Honda PCX150 Scooter",
+      "max": 2,
+      "resHalf": 40,
+      "resFull": 50,
+      "walkHalf": 45,
+      "walkFull": 55,
+      "photo": "../images/Honda_PCX_Scooter.jpg"
+    },
+    {
+      "name": "Honda Pioneer ATV",
+      "max": 4,
+      "resHalf": 50,
+      "resFull": 70,
+      "walkHalf": 60,
+      "walkFull": 80,
+      "photo": "../images/Honda_Pioneer.jpg"
+    },
+    {
+      "name": "Jeep Wrangler - 4 door",
+      "max": 5,
+      "resHalf": 70,
+      "resFull": 100,
+      "walkHalf": 85,
+      "walkFull": 125,
+      "photo": "../images/Jeep4Door.jpg"
+    },
+    {
+      "name": "Jeep Wrangler - 2 door",
+      "max": 4,
+      "resHalf": 60,
+      "resFull": 85,
+      "walkHalf": 70,
+      "walkFull": 90,
+      "photo": "../images/Jeep2Door.jpg"
+    }
+  ]
 }

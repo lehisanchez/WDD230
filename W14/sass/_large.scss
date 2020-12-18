@@ -33,6 +33,10 @@ $container-width: 1200px;
         font-size: 1.2em;
       }
     }
+
+    .form {
+      max-width: $container-width;
+    }
   }
 
   .footer {

@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        fetchCurrentWeather();
-        fetchCurrentForecast();
         updateFooter();
+        fetchPricing();
       });
 
     </script>
@@ -61,14 +60,10 @@
 
     <!-- MAIN CONTENT -->
     <main class="main">
+
       <section class="rentals">
-        <h3>Honda Motor Scooters</h3>
-        <ul>
-          <li>Honda Metropolitan (49cc) - 1 person</li>
-          <li>Honda Dio (110cc) - 2 person</li>
-          <li>Honda PCX150 (149cc) - 2 person</li>
-        </ul>
-        <table>
+
+        <table id="pricingTable">
           <thead>
             <tr>
               <th colspan="6">Pricing Chart</th>
@@ -88,115 +83,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Metropolitan (49cc)</td>
-              <td>1</td>
-              <td>$20</td>
-              <td>$30</td>
-              <td>$25</td>
-              <td>$35</td>
-            </tr>
-            <tr>
-              <td>Dio Scooter</td>
-              <td>2</td>
-              <td>$30</td>
-              <td>$40</td>
-              <td>$35</td>
-              <td>$45</td>
-            </tr>
-            <tr>
-              <td>PCX150 Scooter</td>
-              <td>2</td>
-              <td>$40</td>
-              <td>$50</td>
-              <td>$45</td>
-              <td>$55</td>
-            </tr>
+
           </tbody>
         </table>
       </section>
 
-      <section class="rentals">
-        <h3>ATV Side-by-Side</h3>
-        <ul>
-          <li>Honda Pioneer 1000</li>
-        </ul>
-        <table>
-          <thead>
-            <tr>
-              <th colspan="6">Pricing Chart</th>
-            </tr>
-            <tr>
-              <th colspan="2"></th>
-              <th colspan="2">Reservation</th>
-              <th colspan="2">Walk-In</th>
-            </tr>
-            <tr>
-              <th>Rental Type</th>
-              <th>Max. <br>Persons</th>
-              <th>Half Day</th>
-              <th>Full Day</th>
-              <th>Half Day</th>
-              <th>Full Day</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pioneer 1000</td>
-              <td>4</td>
-              <td>$50</td>
-              <td>$70</td>
-              <td>$60</td>
-              <td>$80</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="rentals">
-        <h3>Jeep Rentals</h3>
-        <ul>
-          <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
-          <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
-        </ul>
-        <table>
-          <thead>
-            <tr>
-              <th colspan="6">Pricing Chart</th>
-            </tr>
-            <tr>
-              <th colspan="2"></th>
-              <th colspan="2">Reservation</th>
-              <th colspan="2">Walk-In</th>
-            </tr>
-            <tr>
-              <th>Rental Type</th>
-              <th>Max. <br>Persons</th>
-              <th>Half Day</th>
-              <th>Full Day</th>
-              <th>Half Day</th>
-              <th>Full Day</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>4-Door Wrangler</td>
-              <td>5</td>
-              <td>$70</td>
-              <td>$100</td>
-              <td>$85</td>
-              <td>$125</td>
-            </tr>
-            <tr>
-              <td>2-Door Wrangler</td>
-              <td>4</td>
-              <td>$60</td>
-              <td>$85</td>
-              <td>$70</td>
-              <td>$90</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
       <section class="rentals">
         <h3>Information and Services</h3>
         <ul>
@@ -212,6 +103,49 @@
           <li>Rentals may be returned to either location.</li>
         </ul>
       </section>
+
+
+      <section class="rentals">
+
+        <h3>Honda Motor Scooters</h3>
+
+        <ul>
+          <li>Honda Metropolitan (49cc) - 1 person</li>
+          <li>Honda Dio (110cc) - 2 person</li>
+          <li>Honda PCX150 (149cc) - 2 person</li>
+        </ul>
+
+        <img src="images/placeholder.jpg" data-src="../images/Honda_Metro_Scooter.jpg" alt="Honda Metro Scooter">
+        <img src="images/placeholder.jpg" data-src="../images/Honda_Dio_Scooter.jpg" alt="Honda Dio Scooter">
+        <img src="images/placeholder.jpg" data-src="../images/Honda_PCX_Scooter.jpg" alt="Honda PCX Scooter">
+
+      </section>
+
+      <section class="rentals">
+
+        <h3>ATV Side-by-Side</h3>
+
+        <ul>
+          <li>Honda Pioneer 1000</li>
+        </ul>
+
+        <img src="images/placeholder.jpg" data-src="../images/Honda_Pioneer.jpg" alt="Honda Pioneer">
+
+      </section>
+
+      <section class="rentals">
+
+        <h3>Jeep Rentals</h3>
+
+        <ul>
+          <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+          <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
+        </ul>
+
+        <img src="images/placeholder.jpg" data-src="../images/Jeep4Door.jpg" alt="Wranger 4-Door">
+        <img src="images/placeholder.jpg" data-src="../images/Jeep2Door.jpg" alt="Wranger 2-Door">
+
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -220,19 +154,19 @@
         <h3>Links</h3>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#">Rentals</a>
+            <a class="footer__link" href="rentals.html">Rentals</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Reservations</a>
+            <a class="footer__link" href="reservations.html">Reservations</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Tours</a>
+            <a class="footer__link" href="tours.html">Tours</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#">Contact</a>
+            <a class="footer__link" href="contact.html">Contact</a>
           </li>
           <li class="footer__item">
-            <a href="#" class="footer__link">Resources</a>
+            <a class="footer__link" href="resources.html">Resources</a>
           </li>
         </ul>
       </div>
@@ -273,6 +207,7 @@
       });
 
     </script>
+    <script src="js/lazyload.js"></script>
     <script src="js/scripts.js" defer></script>
 
   </body>

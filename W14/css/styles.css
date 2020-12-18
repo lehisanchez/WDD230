@@ -259,7 +259,7 @@ h6 {
 }
 .hero__title {
   padding: 0;
-  line-height: 1em;
+  line-height: 1.4em;
   font-family: "Inter";
   font-size: 5em;
   font-weight: 700;
@@ -271,7 +271,6 @@ h6 {
   font-family: "Inter";
   font-weight: 300;
   font-size: 2em;
-  line-height: 2rem;
   color: white;
   margin-bottom: 50px;
   text-align: center;
@@ -399,6 +398,10 @@ h6 {
   font-size: 2em;
   margin-bottom: 20px;
 }
+.main .rentals img {
+  margin-bottom: 10px;
+  width: 300px;
+}
 .main .rentals ul {
   margin-bottom: 30px;
   list-style: disc;
@@ -409,8 +412,8 @@ h6 {
 .main .rentals table,
 .main .rentals th,
 .main .rentals td {
-  padding: 10px 0;
-  border: 1px solid #555;
+  padding: 15px 0;
+  border: 1px solid #ddd;
 }
 .main .rentals table {
   width: 100%;
@@ -423,6 +426,185 @@ h6 {
 .main .rentals table th {
   font-weight: 400;
 }
+.main .resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: white;
+}
+.main .resources__link {
+  font-size: 1em;
+  line-height: 2em;
+  text-decoration: none;
+  color: #fe6601;
+}
+.main .resources__link:hover {
+  color: #fcc01d;
+}
+.main .section__form {
+  padding: 50px;
+  color: white;
+  background-color: #305369;
+}
+.main .section__form h3 {
+  margin-bottom: 50px;
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: center;
+}
+.main .form {
+  font-weight: 300;
+  width: 100%;
+}
+.main .form__fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.main .form__legend {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.main .form__label {
+  width: 100%;
+  margin: 0 20px 20px 0;
+}
+.main .form__label input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.main .form__radio_group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+}
+.main .form__radio_group--vertical {
+  flex-direction: column;
+}
+.main .form__radio_group--vertical span {
+  margin-bottom: 10px;
+}
+.main .form__radio_label {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+}
+.main .form__radio_label input {
+  margin: 0 5px 0 20px;
+}
+.main .form__textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 1em;
+  line-height: 1.6em;
+  border: none;
+  border-radius: 3px;
+}
+.main .form__textarea_label {
+  width: 100%;
+  margin: 0 20px 20px 0;
+}
+.main .form__button {
+  padding: 10px 50px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  background-color: #fe6601;
+  border-bottom: 5px solid #e45c01;
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main .form__button:hover {
+  color: black;
+  border-bottom: 5px solid #c99403;
+  background-color: #fcc01d;
+}
+.main .maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #73a2bf;
+}
+.main .maps:nth-child(2) {
+  background-color: #fcc01d;
+}
+.main .maps:nth-child(3) {
+  background-color: #8cb365;
+}
+.main .maps__heading {
+  margin: 40px 0;
+  font-size: 3em;
+  font-weight: 300;
+}
+.main .maps__address {
+  color: black;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.main .maps__address h3 {
+  margin: 40px 0;
+  font-size: 2em;
+}
+.main .maps__form {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.main .maps__form .form__label {
+  margin-bottom: 20px;
+}
+.main .maps__form input {
+  display: block;
+  width: 100%;
+}
+.main .maps__form__button {
+  padding: 10px 50px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  background-color: #fe6601;
+  border-bottom: 5px solid #e45c01;
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main .maps__form__button:hover {
+  color: black;
+  border-bottom: 5px solid #c99403;
+  background-color: #fcc01d;
+}
+
 #forecastWrapper {
   display: flex;
   flex-direction: row;
@@ -608,9 +790,19 @@ h6 {
     max-width: 800px;
     font-size: 1em;
   }
+  .main .form {
+    max-width: 800px;
+  }
+  .main .form__label {
+    width: unset;
+  }
+  .main .form input {
+    width: unset;
+  }
 
   .footer {
     max-width: 750px;
+    min-height: unset;
     height: auto;
     margin: 0 auto;
     padding: 100px 0;
@@ -637,6 +829,9 @@ h6 {
   .main .rentals table {
     max-width: 1200px;
     font-size: 1.2em;
+  }
+  .main .form {
+    max-width: 1200px;
   }
 
   .footer {
